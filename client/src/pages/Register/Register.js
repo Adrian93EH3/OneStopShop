@@ -6,6 +6,7 @@ import API from '../../lib/API';
 
 class Register extends Component {
   state = {
+    redirectToReferrer: false,
     error: ""
   }
 
@@ -16,12 +17,19 @@ class Register extends Component {
 
     API.Users.create(email, password)
       .then(response => response.data)
-      .then(user => console.log(user))
+      .then(() => {
+        this.setState({ redirectToReferrer: true, error: "" });
+      })
       .catch(err => this.setState({ error: err.message }));
   }
 
   render() {
     const { from } = this.props.location.state || { from: { pathname: "/login" } };
+    const { redirectToReferrer } = this.state;
+
+    if (redirectToReferrer) {
+      return <Redirect to={from} />;
+    }
     return (
       <div className='Register'>
         <div className='row'>
@@ -39,7 +47,7 @@ class Register extends Component {
           </div>}
         <div className='row'>
           <div className='col'>
-            <RegistrationForm onSubmit={this.handleSubmit}><Redirect to={from} /></RegistrationForm> 
+            <RegistrationForm onSubmit={this.handleSubmit} />
           </div>
         </div>
       </div>
