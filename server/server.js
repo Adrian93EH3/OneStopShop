@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 //-- Dependencies ------------------------------------------------------------
 const express = require('express');
 const logger = require('morgan');
-
+const mongoose = require('mongoose');
 const { passport } = require('./lib/passport');
 
 //-- Constants ---------------------------------------------------------------
@@ -52,3 +52,14 @@ app.listen(PORT, () => {
 
 //-- Export to Tests ---------------------------------------------------------
 module.exports = app;
+
+// -- MONGO CONNECTION -------------------------------------------------------
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/Project-3',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
