@@ -55,7 +55,7 @@ module.exports = app;
 
 // -- MONGO CONNECTION -------------------------------------------------------
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  process.env.MONGODB_URI || 'mongodb://localhost/Project-3',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
