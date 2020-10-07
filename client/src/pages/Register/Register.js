@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 import API from '../../lib/API';
@@ -20,6 +21,7 @@ class Register extends Component {
   }
 
   render() {
+    const { from } = this.props.location.state || { from: { pathname: "/login" } };
     return (
       <div className='Register'>
         <div className='row'>
@@ -37,7 +39,7 @@ class Register extends Component {
           </div>}
         <div className='row'>
           <div className='col'>
-            <RegistrationForm onSubmit={this.handleSubmit} />
+            <RegistrationForm onSubmit={this.handleSubmit}><Redirect to={from} /></RegistrationForm> 
           </div>
         </div>
       </div>
