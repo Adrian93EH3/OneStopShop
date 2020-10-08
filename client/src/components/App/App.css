@@ -31,3 +31,24 @@
     transform: rotate(360deg);
   }
 }
+
+.backpack{
+  text-align: center;
+}
+.backpack::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #a62c2b;
+  position: relative;
+  z-index: -2
+}
+
+.parent{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0 auto;
+}
