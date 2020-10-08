@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Backpack from '../../components/Inventory/backpack'
+import Backpack from '../../components/Inventory/backpack';
+import Shoe from '../../components/Inventory/shoe'
 import '../../components/App/App.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -82,7 +83,7 @@ class HomePage extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src={`../images/${item.image}`} />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
       <Card.Text>
