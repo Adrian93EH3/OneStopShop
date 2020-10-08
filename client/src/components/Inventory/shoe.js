@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import CardColumns from "react-bootstrap/CardColumns";
-const backpack = require("./backpack.json");
+const shoe = require("./shoe.json");
 
-class Backpack extends React.Component {
+class Shoe extends React.Component {
   render() {
     return (
       <div>
         <CardColumns>
-          {backpack.backpack.map((item, key) => {
+          {shoe.shoe.map((item, key) => {
             return (
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={`../images/${item.image}`} />
@@ -26,4 +26,4 @@ class Backpack extends React.Component {
   }
 }
 
-export default Backpack;
+export default Shoe;

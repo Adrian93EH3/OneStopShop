@@ -12,3 +12,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#navcolumn {
+border-style: solid;
+border-radius: 5px;
+border-color: darkgreen;
+border-width: 2px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+#slider {
+border-style: solid;
+border-radius: 5px;
+border-color: darkgreen;
+border-width: 2px;
+margin-top: 10px;
+}
+
+body {
+  background-color: rgb(215, 218, 184);
+}
+
+.card {
+margin-top: 15px;
+border-style: solid;
+border-radius: 5px;
+border-color: darkgreen;
+border-width: 2px;
+}
+
+#carddeck {
+  margin-left: 10px;
+  margin-right: 10px;
+}
