@@ -1,7 +1,7 @@
 import React from 'react';
 const backpack = require ('./backpack.json'); 
 
-class backpack extends React.Component {
+class Backpack extends React.Component {
     render() {
         return (
             <div>
@@ -10,7 +10,7 @@ class backpack extends React.Component {
                         {backpack.backpack.map((item, key) => {
                             return (
                                 <article className="child">
-                                    <img className="images" src={item.image}/>
+                                    <img className="images" src={`../images/${item.image}`}/>
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
                                     <h5>{item.price}</h5>
@@ -22,4 +22,4 @@ class backpack extends React.Component {
     }
 }
 
-export default backpack;
+export default Backpack;

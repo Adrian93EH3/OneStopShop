@@ -2,15 +2,15 @@
     "backpack":[
         {
             "id": 1,
-            "image": "../Cars/sz2.jpg",
+            "image": "burberrybp.png",
             "name": "1993 Toyota Supra SZ",
             "price": "Offer: $42,000",
             "type": "Coupe",
-            "description": "This is a mountain backpack for "
+            "description": "This is a luxurious backpack made by none other than Burberry."
         },
         {
             "id": 2,
-            "image": "../Cars/supra.jpg",
+            "image": "coachbp.webp",
             "name": "1993 Toyota Supra SZ",
             "price": "Offer: $45,000",
             "type": "Coupe",
