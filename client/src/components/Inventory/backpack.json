@@ -1,0 +1,100 @@
+{
+    "backpack":[
+        {
+            "id": 1,
+            "image": "../Cars/sz2.jpg",
+            "name": "1993 Toyota Supra SZ",
+            "price": "Offer: $42,000",
+            "type": "Coupe",
+            "description": "This is a mountain backpack for "
+        },
+        {
+            "id": 2,
+            "image": "../Cars/supra.jpg",
+            "name": "1993 Toyota Supra SZ",
+            "price": "Offer: $45,000",
+            "type": "Coupe",
+            "description": "Beautifully painted Midnight Purple III, this Supra stands out from the rest. It's 2JZ-GTE engine has been lightly modified so now the car pushes north of 350whp."
+        },
+        {
+            "id": 3,
+            "image": "../Cars/suv.jpg",
+            "name": "1991 Toyota Land Cruiser",
+            "price": "Offer: $32,000",
+            "type": "SUV",
+            "description": "This Land Cruiser comes with a highly sought after snorkel exhaust, this Land Cruiser comes lifted on 3in. and it sits on some meaty 35in. tires."
+        },
+        {
+            "id": 4,
+            "image": "../Cars/suv2.jpg",
+            "name": "1994 Toyota Land Cruiser",
+            "price": "Offer: $25,000",
+            "type": "SUV",
+            "description": "A classic off-road vehicle made by the ever trustworthy Toyota company, this Land Cruiser comes lifted on 3in. and it sits on some meaty 35in. tires."
+        },
+        {
+            "id": 5,
+            "image": "../Cars/evo3.jpg",
+            "name": "1993 Mitsubishi Evolution II",
+            "price": "Offer: $25,000",
+            "type": "Sedan",
+            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 42K miles, all verified."
+        },
+        {
+            "id": 6,
+            "image": "../Cars/evo.jpg",
+            "name": "1993 Mitsubishi Evolution II",
+            "price": "Offer: $30,000",
+            "type": "Sedan",
+            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 35K miles, all verified."
+        },
+        {
+            "id": 7,
+            "image": "../Cars/evo2.jpg",
+            "name": "1993 Mitsubishi Evolution II",
+            "price": "Offer: $18,000",
+            "type": "Sedan",
+            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 44K miles, all verified."
+        },
+        {
+            "id": 8,
+            "image": "../Cars/mr2.jpg",
+            "name": "1993 Toyota MR2 GTS",
+            "price": "Offer: $12,000",
+            "type": "Coupe",
+            "description": "This MR2 GTS runs great, clutch is brand new too and we fully serviced it. We even gave it a brand new paint job. This MR2 has 72K miles, verified."
+        },
+        {
+            "id": 9,
+            "image": "../Cars/supra2.jpg",
+            "name": "1994 Toyota Supra RZ",
+            "price": "Offer: $70,000",
+            "type": "Coupe",
+            "description": "This Supra is not for the light-hearted. This car has been transformed into a monstrosity capable of putting down 870whp to the tarmac. Runs and drives great, no problems."
+        },
+        {
+            "id": 10,
+            "image": "../Cars/bmw.jpg",
+            "name": "1994 BMW M3",
+            "price": "Offer: $45,000",
+            "type": "Coupe",
+            "description": "This M3 has beautiful factory Daytona Violet Metallic paint and black leather interior, the paint gleams in the sun and the interior still has that new car smell! With only 35K verified miles!"
+        },
+        {
+            "id": 11,
+            "image": "../Cars/wrx.jpg",
+            "name": "1995 Subaru WRX",
+            "price": "Offer: $14,000",
+            "type": "Sedan",
+            "description": "We have this gorgeous Aspen White WRX in stock and ready to go today! Sitting at just 76K miles this Subaru has a lot more miles in it to go, so come on and take it it for a cruise!"
+        },
+        {
+            "id": 12,
+            "image": "../Cars/gtr2.jpg",
+            "name": "1993 Nissan Skyline GTR",
+            "price": "Offer: $20,000",
+            "type": "Coupe",
+            "description": "We have this beautiful Active Red Skyline GTR in stock and ready to go today! Sitting at just over 100K miles, this stock GTR is the perfect base for a budget build. The car drives perfectly."
+        }
+    ]
+}
