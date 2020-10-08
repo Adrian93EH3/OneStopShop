@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "image": "coachbp.webp",
+            "image": "coachbp.png",
             "name": "1993 Toyota Supra SZ",
             "price": "Offer: $45,000",
             "type": "Coupe",
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "image": "../Cars/suv.jpg",
+            "image": "guccibp.png",
             "name": "1991 Toyota Land Cruiser",
             "price": "Offer: $32,000",
             "type": "SUV",
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "image": "../Cars/suv2.jpg",
+            "image": "nikewheatbp.png",
             "name": "1994 Toyota Land Cruiser",
             "price": "Offer: $25,000",
             "type": "SUV",
@@ -34,7 +34,7 @@
         },
         {
             "id": 5,
-            "image": "../Cars/evo3.jpg",
+            "image": "ospreybp.png",
             "name": "1993 Mitsubishi Evolution II",
             "price": "Offer: $25,000",
             "type": "Sedan",
@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "image": "../Cars/evo.jpg",
+            "image": "saintlaurentbp.png",
             "name": "1993 Mitsubishi Evolution II",
             "price": "Offer: $30,000",
             "type": "Sedan",
@@ -50,7 +50,7 @@
         },
         {
             "id": 7,
-            "image": "../Cars/evo2.jpg",
+            "image": "supremeblackbp.png",
             "name": "1993 Mitsubishi Evolution II",
             "price": "Offer: $18,000",
             "type": "Sedan",
@@ -58,7 +58,7 @@
         },
         {
             "id": 8,
-            "image": "../Cars/mr2.jpg",
+            "image": "supremeredbp.png",
             "name": "1993 Toyota MR2 GTS",
             "price": "Offer: $12,000",
             "type": "Coupe",
@@ -66,7 +66,7 @@
         },
         {
             "id": 9,
-            "image": "../Cars/supra2.jpg",
+            "image": "leather.png",
             "name": "1994 Toyota Supra RZ",
             "price": "Offer: $70,000",
             "type": "Coupe",
@@ -74,7 +74,7 @@
         },
         {
             "id": 10,
-            "image": "../Cars/bmw.jpg",
+            "image": "balenciagabp.png",
             "name": "1994 BMW M3",
             "price": "Offer: $45,000",
             "type": "Coupe",
@@ -82,7 +82,7 @@
         },
         {
             "id": 11,
-            "image": "../Cars/wrx.jpg",
+            "image": "coachbp2.png",
             "name": "1995 Subaru WRX",
             "price": "Offer: $14,000",
             "type": "Sedan",
@@ -90,7 +90,7 @@
         },
         {
             "id": 12,
-            "image": "../Cars/gtr2.jpg",
+            "image": "coachbp3.png",
             "name": "1993 Nissan Skyline GTR",
             "price": "Offer: $20,000",
             "type": "Coupe",
