@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-
-import logo from './logo.svg';
+import Backpack from '../../components/Inventory/backpack'
+import '../../components/App/App.css';
 
 class HomePage extends Component {
   render() {
     return (
-      <body>
-      <div class="container">
-        
+      <div className='Home'>
+        <div className='row'>
+          <div className='col'>
+            <Backpack />
+          </div>
+        </div>
       </div>
 
-      </body>
+      
     );
   }
 }

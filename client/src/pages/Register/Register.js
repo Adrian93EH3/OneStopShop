@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 import API from '../../lib/API';
 
 class Register extends Component {
   state = {
+    redirectToReferrer: false,
     error: ""
   }
 
@@ -15,11 +17,19 @@ class Register extends Component {
 
     API.Users.create(email, password)
       .then(response => response.data)
-      .then(user => console.log(user))
+      .then(() => {
+        this.setState({ redirectToReferrer: true, error: "" });
+      })
       .catch(err => this.setState({ error: err.message }));
   }
 
   render() {
+    const { from } = this.props.location.state || { from: { pathname: "/login" } };
+    const { redirectToReferrer } = this.state;
+
+    if (redirectToReferrer) {
+      return <Redirect to={from} />;
+    }
     return (
       <div className='Register'>
         <div className='row'>
