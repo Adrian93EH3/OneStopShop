@@ -3,98 +3,98 @@
         {
             "id": 1,
             "image": "burberrybp.png",
-            "name": "1993 Toyota Supra SZ",
-            "price": "Offer: $42,000",
-            "type": "Coupe",
+            "name": "Burberry Checkered Bag",
+            "price": "$990.00",
+            "type": "Backpack",
             "description": "This is a luxurious backpack made by none other than Burberry."
         },
         {
             "id": 2,
             "image": "coachbp.png",
-            "name": "1993 Toyota Supra SZ",
-            "price": "Offer: $45,000",
-            "type": "Coupe",
-            "description": "Beautifully painted Midnight Purple III, this Supra stands out from the rest. It's 2JZ-GTE engine has been lightly modified so now the car pushes north of 350whp."
+            "name": "Coach Large Ranger Backpack",
+            "price": "$250.00",
+            "type": "Backpack",
+            "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
         },
         {
             "id": 3,
             "image": "guccibp.png",
-            "name": "1991 Toyota Land Cruiser",
-            "price": "Offer: $32,000",
-            "type": "SUV",
-            "description": "This Land Cruiser comes with a highly sought after snorkel exhaust, this Land Cruiser comes lifted on 3in. and it sits on some meaty 35in. tires."
+            "name": "Gucci Black Backpack",
+            "price": "$1,980.00",
+            "type": "Backpack",
+            "description": "The GG motif in a distinct black/grey combination is further enriched with Web straps and black leather trims. Made in soft GG Supreme, a softer version of GG Supreme canvas, crafted from a coated microfiber fabric with the GG motif."
         },
         {
             "id": 4,
             "image": "nikewheatbp.png",
-            "name": "1994 Toyota Land Cruiser",
-            "price": "Offer: $25,000",
-            "type": "SUV",
-            "description": "A classic off-road vehicle made by the ever trustworthy Toyota company, this Land Cruiser comes lifted on 3in. and it sits on some meaty 35in. tires."
+            "name": "Nike Wheat Backpack",
+            "price": "$75.00",
+            "type": "Backpack",
+            "description": "The Nike Utility Speed Backpack keeps your gear close, secure and organized when commuting to and from training sessions. Cushioned straps give you comfort on the go, and the pack opens flat for easy access to must-have items."
         },
         {
             "id": 5,
             "image": "ospreybp.png",
-            "name": "1993 Mitsubishi Evolution II",
-            "price": "Offer: $25,000",
-            "type": "Sedan",
-            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 42K miles, all verified."
+            "name": "Atmos AG 50",
+            "price": "$240.00",
+            "type": "Backpack",
+            "description": "The Atmos™ AG 50 is the best-fitting, most ventilated and comfortable pack ever made for traditional backpacking trips lasting a weekend or more. The innovative AntiGravity suspension makes it feel like you're carrying less weight and seamlessly wraps around your body, which means you'll enjoy every mile more than ever. From easy to use stretch mesh side pockets, Stow-on-the-Go trekking pole attachment, and FlapJacket for lidless use, the Atmos™ AG 50 is still the top contender. Backed by our All Mighty Guarantee, forever."
         },
         {
             "id": 6,
             "image": "saintlaurentbp.png",
-            "name": "1993 Mitsubishi Evolution II",
-            "price": "Offer: $30,000",
-            "type": "Sedan",
-            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 35K miles, all verified."
+            "name": "City Backpack in nylon canvas and leather",
+            "price": "$860.00",
+            "type": "Backpack",
+            "description": "Backpack with leather trimmed Saint Laurent printed from pocket, Saint Laurent signature embossed exterior zip pocket and interior key clip, cell phone pocket, zip compartment and padded slot pocket."
         },
         {
             "id": 7,
             "image": "supremeblackbp.png",
-            "name": "1993 Mitsubishi Evolution II",
-            "price": "Offer: $18,000",
-            "type": "Sedan",
-            "description": "We sourced three bone stock Evo II for you Evo enthusiasts out there. Each one has below 45K miles with this particular one having 44K miles, all verified."
+            "name": "Supreme SS20 black",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "Multi pockety bag with adjustable straps and two side pouches for watter bottels the outer most pocket is a see throught mesh."
         },
         {
             "id": 8,
             "image": "supremeredbp.png",
-            "name": "1993 Toyota MR2 GTS",
-            "price": "Offer: $12,000",
-            "type": "Coupe",
-            "description": "This MR2 GTS runs great, clutch is brand new too and we fully serviced it. We even gave it a brand new paint job. This MR2 has 72K miles, verified."
+            "name": "Supreme SS20 red",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "Multi pockety bag with adjustable straps and two side pouches for watter bottels the outer most pocket is a see throught mesh."
         },
         {
             "id": 9,
             "image": "leather.png",
-            "name": "1994 Toyota Supra RZ",
-            "price": "Offer: $70,000",
-            "type": "Coupe",
-            "description": "This Supra is not for the light-hearted. This car has been transformed into a monstrosity capable of putting down 870whp to the tarmac. Runs and drives great, no problems."
+            "name": "Crazy Horse Leather Backpack Yukon Bags",
+            "price": "$269.00",
+            "type": "Backpack",
+            "description": "Crazy Horse Leather Backpack provides amazing durability along with giving off a stylish look. It has been carefully made with an embossing technique and from an excellent quality crazy horse leather. This bag acquires an antique, unique look with time since it is made of a natural material. Apart from being aesthetically pleasing, this backpack provides plenty of space in which you can easily store your essentials.This bag is also quite strong and sturdy and can withstand tough environments. The thoughtfully-designed shoulder straps distribute the weight evenly so that your shoulders feel relaxed and comfortable. You can also adjust the shoulder straps according to your liking. Crazy Horse Leather Backpack is a perfect choice for school, work, traveling, camping, or hiking etc. Its grab handle is lined with leather so you can easily and comfortably carry it around too."
         },
         {
             "id": 10,
             "image": "balenciagabp.png",
-            "name": "1994 BMW M3",
-            "price": "Offer: $45,000",
-            "type": "Coupe",
-            "description": "This M3 has beautiful factory Daytona Violet Metallic paint and black leather interior, the paint gleams in the sun and the interior still has that new car smell! With only 35K verified miles!"
+            "name": "Wheel Small Backpack Balenciaga",
+            "price": "$950.00",
+            "type": "Backpack",
+            "description": "This amall nylon bag that was made in italy comes with adjustable shoulder straps, and three different pockets."
         },
         {
             "id": 11,
             "image": "coachbp2.png",
-            "name": "1995 Subaru WRX",
-            "price": "Offer: $14,000",
-            "type": "Sedan",
-            "description": "We have this gorgeous Aspen White WRX in stock and ready to go today! Sitting at just 76K miles this Subaru has a lot more miles in it to go, so come on and take it it for a cruise!"
+            "name": "Hudson Backpack with Hore and Carriage Print",
+            "price": "$289.00",
+            "type": "Backpack",
+            "description": "Printed Coated canvas and natural pebble leather, the bag has multipule poutches for your phone or laptop."
         },
         {
             "id": 12,
             "image": "coachbp3.png",
-            "name": "1993 Nissan Skyline GTR",
-            "price": "Offer: $20,000",
-            "type": "Coupe",
-            "description": "We have this beautiful Active Red Skyline GTR in stock and ready to go today! Sitting at just over 100K miles, this stock GTR is the perfect base for a budget build. The car drives perfectly."
+            "name": "West Backpack In Signature Canvas With Varsity Stripe",
+            "price": "$249.00",
+            "type": "Backpack",
+            "description": "Signature coated canvas and smooth calf leather, has two seperate compartments with zip closures, and adjustable shoulder straps."
         }
     ]
 }
