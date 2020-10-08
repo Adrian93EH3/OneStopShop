@@ -59,7 +59,7 @@ class HomePage extends Component {
               </div>
             </Slider>
           </Col>
-          <Row></Row>
+          <Row>
           <CardDeck id="carddeck">
             <Card class="card">
               <Card.Img variant="top" src="holder.js/100px160" />
@@ -147,9 +147,11 @@ class HomePage extends Component {
             </Card.Footer>
           </Card>
         </CardDeck>
+        </Row>
       </>
     );
   }
 }
 
 export default HomePage;
+
