@@ -11,17 +11,10 @@
         {
             "id": 2,
             "image": "coachbp.png",
-<<<<<<< HEAD
             "name": "Coach Large Ranger Backpack",
             "price": "$250.00",
             "type": "Backpack",
             "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
-=======
-            "name": "1993 Toyota Supra SZ",
-            "price": "Offer: $45,000",
-            "type": "Coupe",
-            "description": "Woven from the finest materials on this planet, Osprey brings you their ultimate backpack."
->>>>>>> e080fd0312b9b351b37387e0b65112215781815c
         },
         {
             "id": 3,
