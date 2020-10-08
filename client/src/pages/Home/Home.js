@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Backpack from '../../components/Inventory/backpack'
+import Backpack from '../../components/Inventory/backpack';
+import Shoe from '../../components/Inventory/shoe'
 import '../../components/App/App.css';
 
 class HomePage extends Component {
@@ -8,7 +9,6 @@ class HomePage extends Component {
       <div className='Home'>
         <div className='row'>
           <div className='col'>
-            <Backpack />
           </div>
         </div>
       </div>
