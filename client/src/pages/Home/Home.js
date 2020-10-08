@@ -40,6 +40,8 @@ class HomePage extends Component {
               Disabled
   </Nav.Link>
           </Nav> */}
+
+          
         </Col>
             <Col lg={7} >
               <Slider {...settings} id="slider" >
