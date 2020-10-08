@@ -11,6 +11,7 @@ import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import CardDeck from 'react-bootstrap/CardDeck'
 import CardGroup from 'react-bootstrap/CardGroup'
+const home = require("./home.json");
 
 class HomePage extends Component {
   render() {
@@ -74,7 +75,7 @@ class HomePage extends Component {
 
         <CardDeck id="carddeck">
           <Card class="card">
-            <Card.Img variant="top" src={'../../images'} />
+            <Card.Img variant="top" src={'../images'} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -87,7 +88,7 @@ class HomePage extends Component {
             </Card.Footer>
           </Card>
           <Card>
-            <Card.Img variant="top" />
+          <Card.Img variant="top" src={'../../images'} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -100,7 +101,7 @@ class HomePage extends Component {
             </Card.Footer>
           </Card>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src={'../../images'} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>

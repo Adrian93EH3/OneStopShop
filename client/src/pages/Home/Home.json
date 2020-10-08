@@ -1,0 +1,28 @@
+{
+    "home":[
+        {
+            "id": 1,
+            "image": "Bletteredsole.png",
+            "name": "1993 Toyota Supra SZ",
+            "price": "Offer: $42,000",
+            "type": "Coupe",
+            "description": "This is a luxurious backpack made by none other than Burberry."
+        },
+        {
+            "id": 2,
+            "image": "saintlaurentbp.png",
+            "name": "1993 Toyota Supra SZ",
+            "price": "Offer: $45,000",
+            "type": "Coupe",
+            "description": "Beautifully painted Midnight Purple III, this Supra stands out from the rest. It's 2JZ-GTE engine has been lightly modified so now the car pushes north of 350whp."
+        },
+        {
+            "id": 3,
+            "image": "BLacedHeel.png",
+            "name": "1991 Toyota Land Cruiser",
+            "price": "Offer: $32,000",
+            "type": "SUV",
+            "description": "This Land Cruiser comes with a highly sought after snorkel exhaust, this Land Cruiser comes lifted on 3in. and it sits on some meaty 35in. tires."
+        }
+    ]
+}
