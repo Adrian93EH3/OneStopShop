@@ -41,7 +41,7 @@ class HomePage extends Component {
   </Nav.Link>
           </Nav> */}
 
-          
+
         </Col>
             <Col lg={7} >
               <Slider {...settings} id="slider" >
@@ -69,7 +69,7 @@ class HomePage extends Component {
       </Row>
       <CardDeck id="carddeck">
   <Card class="card">
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src={'../../images'} />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
       <Card.Text>
