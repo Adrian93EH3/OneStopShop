@@ -8,9 +8,9 @@ class Computer extends React.Component {
     return (
       <div>
         <CardColumns>
-          {computer.computer.map((item, key) => {
+          {computer.computer.map((item) => {
             return (
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "18rem" }} key={item.id}>
                 <Card.Img variant="top" src={`../images/${item.image}`} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>

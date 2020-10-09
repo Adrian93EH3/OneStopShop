@@ -56,9 +56,9 @@ class HomePage extends Component {
         <Row>
           <Col>
             <CardColumns>
-              {featured.featured.map((item, key) => {
+              {featured.featured.map((item) => {
                 return (
-                  <Card class="card">
+                  <Card key={item.id}>
                     <Card.Img variant="top" src={`../images/${item.image}`} />
                     <Card.Body>
                       <Card.Title>{item.name}</Card.Title>
