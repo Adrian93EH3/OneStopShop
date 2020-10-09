@@ -1,0 +1,100 @@
+{
+    "computer":[
+        {
+            "id": 1,
+            "image": "PC1.png",
+            "name": "Burberry Checkered Bag",
+            "price": "$990.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/AMD-Threadripper-Ultimate"
+        },
+        {
+            "id": 2,
+            "image": "PC2.png",
+            "name": "Coach Large Ranger Backpack",
+            "price": "$250.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/LIRIK-200"
+        },
+        {
+            "id": 3,
+            "image": "PC3.png",
+            "name": "Gucci Black Backpack",
+            "price": "$1,980.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/LUXE-4K"
+        },
+        {
+            "id": 4,
+            "image": "PC4.png",
+            "name": "Nike Wheat Backpack",
+            "price": "$75.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Hyper-Liquid-Alloy-Black-Mamba"
+        },
+        {
+            "id": 5,
+            "image": "PC5.png",
+            "name": "Atmos AG 50",
+            "price": "$240.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Gamer-Infinity-XLC"
+        },
+        {
+            "id": 6,
+            "image": "PC6.png",
+            "name": "City Backpack in nylon canvas and leather",
+            "price": "$860.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Pro-Designer-100"
+        },
+        {
+            "id": 7,
+            "image": "PC7.png",
+            "name": "Supreme SS20 black",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Syber-L-Elite-300"
+        },
+        {
+            "id": 8,
+            "image": "PC8.png",
+            "name": "Supreme SS20 red",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Gamer-Master-8000"
+        },
+        {
+            "id": 9,
+            "image": "PC9.png",
+            "name": "Crazy Horse Leather Backpack Yukon Bags",
+            "price": "$269.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Syber-L-Pro-200"
+        },
+        {
+            "id": 10,
+            "image": "PC10.png",
+            "name": "Wheel Small Backpack Balenciaga",
+            "price": "$950.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/AMD-Ryzen-7X-Configurator"
+        },
+        {
+            "id": 11,
+            "image": "PC11.png",
+            "name": "Hudson Backpack with Hore and Carriage Print",
+            "price": "$289.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Gamer-Xtreme-1000"
+        },
+        {
+            "id": 12,
+            "image": "PC12.png",
+            "name": "West Backpack In Signature Canvas With Varsity Stripe",
+            "price": "$249.00",
+            "type": "Backpack",
+            "description": "https://www.cyberpowerpc.com/system/Battlebox-2020-Essential-Core"
+        }
+    ]
+}
