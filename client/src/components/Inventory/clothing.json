@@ -2,7 +2,7 @@
     "computer":[
         {
             "id": 1,
-            "image": "PC1.png",
+            "image": "HRF1.png",
             "name": "Burberry Checkered Bag",
             "price": "$990.00",
             "type": "Backpack",
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "image": "PC2.png",
+            "image": "HUFMultiF.png",
             "name": "Coach Large Ranger Backpack",
             "price": "$250.00",
             "type": "Backpack",
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "image": "PC3.png",
+            "image": "HUFCamoF.png",
             "name": "Gucci Black Backpack",
             "price": "$1,980.00",
             "type": "Backpack",
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "image": "PC4.png",
+            "image": "BrownF.png",
             "name": "Nike Wheat Backpack",
             "price": "$75.00",
             "type": "Backpack",
@@ -34,7 +34,7 @@
         },
         {
             "id": 5,
-            "image": "PC5.png",
+            "image": "ItachiF.png",
             "name": "Atmos AG 50",
             "price": "$240.00",
             "type": "Backpack",
@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "image": "PC6.png",
+            "image": "FakeFriendsF.png",
             "name": "City Backpack in nylon canvas and leather",
             "price": "$860.00",
             "type": "Backpack",
@@ -50,7 +50,7 @@
         },
         {
             "id": 7,
-            "image": "PC7.png",
+            "image": "VansF.png",
             "name": "Supreme SS20 black",
             "price": "$225.00",
             "type": "Backpack",
@@ -58,7 +58,7 @@
         },
         {
             "id": 8,
-            "image": "PC8.png",
+            "image": "OldSoulF.png",
             "name": "Supreme SS20 red",
             "price": "$225.00",
             "type": "Backpack",
@@ -66,7 +66,7 @@
         },
         {
             "id": 9,
-            "image": "PC9.png",
+            "image": "UnfollowF.png",
             "name": "Crazy Horse Leather Backpack Yukon Bags",
             "price": "$269.00",
             "type": "Backpack",
@@ -74,7 +74,7 @@
         },
         {
             "id": 10,
-            "image": "PC10.png",
+            "image": "LoveDrugF.png",
             "name": "Wheel Small Backpack Balenciaga",
             "price": "$950.00",
             "type": "Backpack",
@@ -82,7 +82,7 @@
         },
         {
             "id": 11,
-            "image": "PC11.png",
+            "image": "PinkF.png",
             "name": "Hudson Backpack with Hore and Carriage Print",
             "price": "$289.00",
             "type": "Backpack",
@@ -90,7 +90,7 @@
         },
         {
             "id": 12,
-            "image": "PC12.png",
+            "image": "LoserF.png",
             "name": "West Backpack In Signature Canvas With Varsity Stripe",
             "price": "$249.00",
             "type": "Backpack",
