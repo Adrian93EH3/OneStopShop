@@ -1,0 +1,100 @@
+{
+    "computer":[
+        {
+            "id": 1,
+            "image": "PC1.png",
+            "name": "Burberry Checkered Bag",
+            "price": "$990.00",
+            "type": "Backpack",
+            "description": "https://www.amazon.com/Fox-Racing-Honda-Pullover-Hoodie-Black-S/dp/B07N7Q7JKM/ref=sr_1_2?dchild=1&keywords=Honda+Racing+Jacket&qid=1602258978&sr=8-2"
+        },
+        {
+            "id": 2,
+            "image": "PC2.png",
+            "name": "Coach Large Ranger Backpack",
+            "price": "$250.00",
+            "type": "Backpack",
+            "description": " https://www.hufworldwide.com/huf_en_us/wave-anorak-jacket-jk00229?color=hot-pink"
+        },
+        {
+            "id": 3,
+            "image": "PC3.png",
+            "name": "Gucci Black Backpack",
+            "price": "$1,980.00",
+            "type": "Backpack",
+            "description": "https://www.hufworldwide.com/huf_en_us/network-lightweight-jacket-jk00248?color=realtree-black"
+        },
+        {
+            "id": 4,
+            "image": "PC4.png",
+            "name": "Nike Wheat Backpack",
+            "price": "$75.00",
+            "type": "Backpack",
+            "description": "https://www2.hm.com/en_us/productpage.0890516004.html"
+        },
+        {
+            "id": 5,
+            "image": "PC5.png",
+            "name": "Atmos AG 50",
+            "price": "$240.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/primitive-x-naruto-crows-burgundy-coaches-jacket.html"
+        },
+        {
+            "id": 6,
+            "image": "PC6.png",
+            "name": "City Backpack in nylon canvas and leather",
+            "price": "$860.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/broken-promises-we-aint-homies-black-hooded-coaches-jacket.html"
+        },
+        {
+            "id": 7,
+            "image": "PC7.png",
+            "name": "Supreme SS20 black",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/vans-barbed-floral-white-hoodie.html"
+        },
+        {
+            "id": 8,
+            "image": "PC8.png",
+            "name": "Supreme SS20 red",
+            "price": "$225.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/empyre-fredia-old-soul-black-purple-tie-dye-hoodie.html"
+        },
+        {
+            "id": 9,
+            "image": "PC9.png",
+            "name": "Crazy Horse Leather Backpack Yukon Bags",
+            "price": "$269.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/broken-promises-unfollow-black-tie-dye-hoodie.html"
+        },
+        {
+            "id": 10,
+            "image": "PC10.png",
+            "name": "Wheel Small Backpack Balenciaga",
+            "price": "$950.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/civil-love-is-a-drug-orchid-hoodie.html"
+        },
+        {
+            "id": 11,
+            "image": "PC11.png",
+            "name": "Hudson Backpack with Hore and Carriage Print",
+            "price": "$289.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/dravus-dierdra-pink-hoodie.html"
+        },
+        {
+            "id": 12,
+            "image": "PC12.png",
+            "name": "West Backpack In Signature Canvas With Varsity Stripe",
+            "price": "$249.00",
+            "type": "Backpack",
+            "description": "https://www.zumiez.com/jv-by-jac-vanek-loser-purple-yellow-blue-tie-dye-hoodie.html"
+        }
+    ]
+}
