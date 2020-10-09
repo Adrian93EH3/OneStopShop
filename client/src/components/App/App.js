@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-
-import API from '../../lib/API';
-import TokenStore from '../../lib/TokenStore';
-import AuthContext from '../../contexts/AuthContext';
-import Navigation from '../../components/Navigation/Navigation';
-import PrivateRoute from '../../components/PrivateRoute/PrivateRoute';
-import Home from '../../pages/Home/Home';
-import Login from '../../pages/Login/Login';
-import Register from '../../pages/Register/Register';
-import Secret from '../../pages/Secret/Secret';
-import NotFound from '../../pages/NotFound/NotFound';
-
-
-import './App.css';
+import React, { Component } from "react";
+import { Switch, Route, Link} from "react-router-dom";
+import API from "../../lib/API";
+import TokenStore from "../../lib/TokenStore";
+import AuthContext from "../../contexts/AuthContext";
+import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
+import Home from "../../pages/Home/Home";
+import Login from "../../pages/Login/Login";
+import Register from "../../pages/Register/Register";
+import Secret from "../../pages/Secret/Secret";
+import NotFound from "../../pages/NotFound/NotFound";
+import Navigation from "../../components/Navigation/Navigation";
+import Backpack from '../Inventory/backpack'
+import Shoe from '../Inventory/shoe'
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+import Col from "react-bootstrap/Col";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -21,22 +24,26 @@ class App extends Component {
 
     this.handleLogin = (user, authToken) => {
       TokenStore.setToken(authToken);
-      this.setState(prevState => ({ auth: { ...prevState.auth, user, authToken } }));
+      this.setState((prevState) => ({
+        auth: { ...prevState.auth, user, authToken },
+      }));
     };
 
     this.handleLogout = () => {
       TokenStore.clearToken();
-      this.setState(prevState => ({ auth: { ...prevState.auth, user: undefined, authToken: undefined } }));
-    }
+      this.setState((prevState) => ({
+        auth: { ...prevState.auth, user: undefined, authToken: undefined },
+      }));
+    };
 
     this.state = {
       auth: {
         user: undefined,
         authToken: TokenStore.getToken(),
         onLogin: this.handleLogin,
-        onLogout: this.handleLogout
-      }
-    }
+        onLogout: this.handleLogout,
+      },
+    };
   }
 
   componentDidMount() {
@@ -44,26 +51,49 @@ class App extends Component {
     if (!authToken) return;
 
     API.Users.getMe(authToken)
-      .then(response => response.data)
-      .then(user => this.setState(prevState => ({ auth: { ...prevState.auth, user } })))
-      .catch(err => console.log(err));
+      .then((response) => response.data)
+      .then((user) =>
+        this.setState((prevState) => ({ auth: { ...prevState.auth, user } }))
+      )
+      .catch((err) => console.log(err));
   }
 
   render() {
     return (
       <AuthContext.Provider value={this.state.auth}>
-        <div className='App'>
+        <div className="App">
           <Navigation />
-          {/* <div className='container'> */}
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/login' component={Login} />
-              <Route path='/register' component={Register} />
-              <PrivateRoute path='/secret' component={Secret} />
-              <Route component={NotFound} />
-            </Switch>
-          </div>
-        {/* </div> */}
+        <Row>
+        <Col lg={3}>
+        <Card style={{ width: "12rem" }} id="navcolumn">
+          <Card.Header>Featured</Card.Header>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <Link to="/backpacks">Backpacks</Link>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Link to="/shoes">Shoes</Link>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Link to="/tech">Tech</Link>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Link to="/clothes">Clothes</Link>
+            </ListGroup.Item>
+          </ListGroup>
+        </Card>
+        </Col>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+            <PrivateRoute path="/secret" component={Secret} />
+            <Route exact path="/backpacks" component={Backpack} />
+            <Route exact path="/shoes" component={Shoe} />
+            <Route component={NotFound} />
+          </Switch>
+        </Row>
+        </div>
       </AuthContext.Provider>
     );
   }
