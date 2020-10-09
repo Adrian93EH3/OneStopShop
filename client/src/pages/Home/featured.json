@@ -18,19 +18,19 @@
         },
         {
             "id":3,
-            "image": "lebron.png",
-            "name": "",
-            "price": "",
-            "type": "",
-            "description": ""
+            "image": "jordan.png",
+            "name": "Jordan Zoom '92",
+            "price": "$150.00",
+            "type": "Shoes",
+            "description": "A nod to '90s basketball shoes, the Jordan Zoom '92 focuses on comfort while tapping into the irreverent spirit of that era's designs. A stretchy fit sleeve and underfoot cushioning offer a comfortable fit. '90s-inspired details give the shoe its retro flavor."
         },
         {
             "id":4,
             "image": "NMbluetongue.png",
-            "name": "",
-            "price": "",
-            "type": "",
-            "description": ""
+            "name": "Giuseppe Zanotti Men's Velvet & Patent Leather Mid-Top Sneakers",
+            "price": "$710.00",
+            "type": "Shoes",
+            "description": "This mid-top sneaker is made out of velvet and patent metallic leather, with a round toe and duel zips on either side of the laces, and a rubber outsoul."
         },
         {
             "id":5,

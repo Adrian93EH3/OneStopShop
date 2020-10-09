@@ -1,79 +1,79 @@
 import React, { Component } from "react";
 import "../../components/App/App.css";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Slider from "react-slick";
+import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import CardColumns from "react-bootstrap/CardColumns";
+import Carousel from "react-bootstrap/Carousel";
 const featured = require("./featured.json");
 
 class HomePage extends Component {
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,  
-      adaptiveHeight: true,
-      centerMode: true,
-    };
     return (
-      <Row>
-        <Col sm={4}>
-          <Card style={{ width: "18rem" }} id="navcolumn">
-            <Card.Header>Featured</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>Backpacks</ListGroup.Item>
-              <ListGroup.Item>Shoes</ListGroup.Item>
-              <ListGroup.Item>Tech</ListGroup.Item>
-              <ListGroup.Item>Clothes</ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </Col>
+      <>
         <Col lg={3}>
-          <Slider {...settings} id="slider">
-            <div>
-              <img src={"../images/burberrybp.png"} />
-            </div>
-            <div>
-              <h1>2</h1>
-            </div>
-            <div>
-              <h1>3</h1>
-            </div>
-            <div>
-              <h1>4</h1>
-            </div>
-            <div>
-              <h1>5</h1>
-            </div>
-            <div>
-              <h1>6</h1>
-            </div>
-          </Slider>
+          <Carousel>
+            <Carousel.Item interval={1000}>
+              <img
+                className="d-block w-100"
+                src={"../images/leather.png"}
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+              <img
+                className="d-block w-100"
+                src={"../images/AF1.png"}
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={"../images/burberrybp.png"}
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h3>Third slide label</h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </Col>
         <Row>
-          <CardColumns> 
-           {featured.featured.map((item, key) => {
-            return (
-            <Card class="card">
-            <Card.Img variant="top" src={`../images/${item.image}`} />
-                <Card.Body>
-                  <Card.Title>{item.name}</Card.Title>
-                  <Card.Text>{item.description}</Card.Text>
-                  <Card.Title>{item.price}</Card.Title>
-                </Card.Body>
-              </Card>
-            )
-           })}
-          </CardColumns>
+          <Col>
+            <CardColumns>
+              {featured.featured.map((item, key) => {
+                return (
+                  <Card class="card">
+                    <Card.Img variant="top" src={`../images/${item.image}`} />
+                    <Card.Body>
+                      <Card.Title>{item.name}</Card.Title>
+                      <Card.Text>{item.description}</Card.Text>
+                      <Card.Title>{item.price}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                );
+              })}
+            </CardColumns>
+          </Col>
         </Row>
-      </Row>
+      </>
     );
   }
 }
 
 export default HomePage;
-
