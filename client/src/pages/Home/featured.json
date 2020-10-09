@@ -1,0 +1,52 @@
+{
+    "featured":[
+       {
+            "id": 1,
+            "image": "burberrybp.png",
+            "name": "Burberry Checkered Bag",
+            "price": "$990.00",
+            "type": "Backpack",
+            "description": "This is a luxurious backpack made by none other than Burberry."
+        },
+        {
+            "id": 2,
+            "image": "coachbp.png",
+            "name": "Coach Large Ranger Backpack",
+            "price": "$250.00",
+            "type": "Backpack",
+            "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
+        },
+        {
+            "id":3,
+            "image": "lebron.png",
+            "name": "",
+            "price": "",
+            "type": "",
+            "description": ""
+        },
+        {
+            "id":4,
+            "image": "NMbluetongue.png",
+            "name": "",
+            "price": "",
+            "type": "",
+            "description": ""
+        },
+        {
+            "id":5,
+            "image": "PC6.png",
+            "name": "Pro Designer 100",
+            "price": "$1859.00",
+            "type": "Pre-built Computer",
+            "description": "High-end gaming PC with an Intel i7-10700 processor, a GeForce RTX 2070 SUPER 8GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more." 
+        },
+        {
+            "id":6,
+            "image": "PC11.png",
+            "name": "Gamer Xtreme 1000",
+            "price": "$1165.00",
+            "type": "Pre-built Computer",
+            "description": "Mid-range gaming PC built with an Intel i5-10400 processor, a GTX 1650 SUPER 4GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more"
+        }
+    ]
+}

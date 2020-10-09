@@ -32,7 +32,6 @@ margin-top: 10px !important;
 display: inline-block !important;
 }
 
-
 body {
   background-color: rgb(215, 218, 184);
 }
@@ -48,4 +47,10 @@ border-width: 2px;
 #carddeck {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#featured {
+  margin-left: 30px;
+  margin-top: 15px;
+  text-decoration: underline;
 }

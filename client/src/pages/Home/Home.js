@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import "../../components/App/App.css";
 import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
+import CardColumns from "react-bootstrap/CardColumns";
 import Carousel from "react-bootstrap/Carousel";
-
+const featured = require("./featured.json");
 
 class HomePage extends Component {
   render() {
     return (
       <>
         <Col lg={3}>
-          <Carousel >
+          <Carousel>
             <Carousel.Item interval={1000}>
               <img
                 className="d-block w-100"
@@ -52,23 +53,24 @@ class HomePage extends Component {
             </Carousel.Item>
           </Carousel>
         </Col>
-
-        <CardDeck id="carddeck">
-          <Card>
-            <Card.Img variant="top" src={"../images/burberrybp.png"} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small ClassName="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-        </CardDeck>
+        <Row>
+          <Col>
+            <CardColumns>
+              {featured.featured.map((item, key) => {
+                return (
+                  <Card class="card">
+                    <Card.Img variant="top" src={`../images/${item.image}`} />
+                    <Card.Body>
+                      <Card.Title>{item.name}</Card.Title>
+                      <Card.Text>{item.description}</Card.Text>
+                      <Card.Title>{item.price}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                );
+              })}
+            </CardColumns>
+          </Col>
+        </Row>
       </>
     );
   }
