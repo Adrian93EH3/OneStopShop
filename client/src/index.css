@@ -20,14 +20,16 @@ border-color: darkgreen;
 border-width: 2px;
 margin-right: 10px;
 margin-left: 10px;
+
 }
 
-#slider {
-border-style: solid;
-border-radius: 5px;
-border-color: darkgreen;
-border-width: 2px;
-margin-top: 10px;
+.carousel-inner{
+border-style: solid !important;
+border-radius: 5px !important;
+border-color: darkgreen !important;
+border-width: 2px !important;
+margin-top: 10px !important;
+display: inline-block !important;
 }
 
 
