@@ -1,0 +1,39 @@
+{
+    "featured":[
+       {
+            "id": 1,
+            "image": "burberrybp.png",
+            "name": "Burberry Checkered Bag",
+            "price": "$990.00",
+            "type": "Backpack",
+            "description": "This is a luxurious backpack made by none other than Burberry."
+        },
+        {
+            "id": 2,
+            "image": "coachbp.png",
+            "name": "Coach Large Ranger Backpack",
+            "price": "$250.00",
+            "type": "Backpack",
+            "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
+        },
+        {
+            "id":3,
+            "image": "lebron.png",
+            "name": "",
+            "price": "",
+            "type": "",
+            "description": ""
+        },
+        {
+            "id":4,
+            "image": "NMbluetongue.png",
+            "name": "",
+            "price": "",
+            "type": "",
+            "description": ""
+        },
+        {
+            
+        }
+    ]
+}

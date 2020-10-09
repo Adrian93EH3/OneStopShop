@@ -11,6 +11,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import CardDeck from "react-bootstrap/CardDeck";
 import CardGroup from "react-bootstrap/CardGroup";
+const featured = require("./featured.json");
 
 class HomePage extends Component {
   render() {
