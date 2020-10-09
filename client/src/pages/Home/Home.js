@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import CardColumns from "react-bootstrap/CardColumns";
-const home = require("./Home.json");
+const featured = require("./featured.json");
 
 class HomePage extends Component {
   render() {
@@ -56,7 +56,7 @@ class HomePage extends Component {
         </Col>
         <Row>
           <CardColumns> 
-           {home.home.map((item, key) => {
+           {featured.featured.map((item, key) => {
             return (
             <Card class="card">
             <Card.Img variant="top" src={`../images/${item.image}`} />

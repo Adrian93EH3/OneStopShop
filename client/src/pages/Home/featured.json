@@ -33,7 +33,20 @@
             "description": ""
         },
         {
-            
+            "id":5,
+            "image": "PC6.png",
+            "name": "Pro Designer 100",
+            "price": "$1859.00",
+            "type": "Pre-built Computer",
+            "description": "High-end gaming PC with an Intel i7-10700 processor, a GeForce RTX 2070 SUPER 8GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more." 
+        },
+        {
+            "id":6,
+            "image": "PC11.png",
+            "name": "Gamer Xtreme 1000",
+            "price": "$1165.00",
+            "type": "Pre-built Computer",
+            "description": "Mid-range gaming PC built with an Intel i5-10400 processor, a GTX 1650 SUPER 4GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more"
         }
     ]
 }
