@@ -21,8 +21,7 @@ import Col from "react-bootstrap/Col";
 import Footer from "../Footer/footer"
 import Intro from "../Intro/intro";
 import "./App.css";
-import Computer from "../Inventory/computer";
-import Clothing from "../Inventory/clothing";
+
 
 class App extends Component {
   constructor(props) {
