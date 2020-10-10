@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../components/App/App.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
@@ -10,10 +9,10 @@ const featured = require("./featured.json");
 class HomePage extends Component {
   render() {
     return (
-      <>
+      <div>
         <Col lg={3}>
           <Carousel>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={500}>
               <img
                 className="d-block w-100"
                 src={"../images/leather.png"}
@@ -55,23 +54,23 @@ class HomePage extends Component {
         </Col>
         <Row>
           <Col>
-            <CardColumns>
-              {featured.featured.map((item, key) => {
-                return (
-                  <Card class="card">
-                    <Card.Img variant="top" src={`../images/${item.image}`} />
-                    <Card.Body>
-                      <Card.Title>{item.name}</Card.Title>
-                      <Card.Text>{item.description}</Card.Text>
-                      <Card.Title>{item.price}</Card.Title>
-                    </Card.Body>
-                  </Card>
-                );
-              })}
-            </CardColumns>
+          <CardColumns>
+          {featured.featured.map((item, key) => {
+            return (
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={`../images/${item.image}`} />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                  <Card.Title>{item.price}</Card.Title>
+                </Card.Body>
+              </Card>
+            );
+          })}
+        </CardColumns>
           </Col>
         </Row>
-      </>
+      </div>
     );
   }
 }
