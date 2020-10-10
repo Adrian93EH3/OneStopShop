@@ -20,7 +20,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
 import Footer from "../Footer/footer"
 import Intro from "../Intro/intro";
-import LandingPage from "../../pages/LandingPage/LandingPage";
+
 import "./App.css";
 
 
@@ -68,7 +68,6 @@ class App extends Component {
     return (
       <AuthContext.Provider value={this.state.auth}>
         <div className="App">
-        <Route exact path='/' component={LandingPage} />
           <Navigation />
           <Row>
             <Route exact path="/home" component={Intro} />
