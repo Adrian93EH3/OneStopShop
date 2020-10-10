@@ -7,16 +7,19 @@ import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
 import Home from "../../pages/Home/Home";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Register/Register";
-import Secret from "../../pages/Secret/Secret";
+import Admin from "../../pages/Admin/Admin";
 import NotFound from "../../pages/NotFound/NotFound";
 import Navigation from "../../components/Navigation/Navigation";
 import Backpack from "../Inventory/backpack";
 import Shoe from "../Inventory/shoe";
 import Computer from "../Inventory/computer";
+import Clothes from "../Inventory/clothing";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
+import Footer from "../Footer/footer"
+import Intro from "../Intro/intro";
 import "./App.css";
 
 class App extends Component {
@@ -65,6 +68,7 @@ class App extends Component {
         <div className="App">
           <Navigation />
           <Row>
+            <Route exact path="/" component={Intro} />
             <Col lg={3}>
               <Card style={{ width: "12rem" }} id="navcolumn">
                 <Card.Header>Featured</Card.Header>
@@ -85,16 +89,19 @@ class App extends Component {
               </Card>
             </Col>
             <Switch>
+            
               <Route exact path="/" component={Home} />
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
-              <PrivateRoute path="/secret" component={Secret} />
+              <PrivateRoute path="/admin" component={Admin} />
               <Route exact path="/backpacks" component={Backpack} />
               <Route exact path="/shoes" component={Shoe} />
               <Route exact path="/tech" component={Computer} />
+              <Route exact path="/clothes" component={Clothes} />
               <Route component={NotFound} />
             </Switch>
           </Row>
+          <Footer />
         </div>
       </AuthContext.Provider>
     );
