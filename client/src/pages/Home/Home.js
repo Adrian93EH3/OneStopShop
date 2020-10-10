@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row'
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Carousel from "react-bootstrap/Carousel";
-import Navigation from "../../components/Navigation/Navigation";
 import styled, { keyframes } from "styled-components";
 import { bounce, fadeIn, fadeInDown, flash, flipInX, headShake, jello, pulse, rollIn, rotateInDownLeft, rotateInDownRight, rubberBand, shake, slideInDown, swing, tada, wobble, zoomIn } from "react-animations";
 const featured = require("./featured.json");

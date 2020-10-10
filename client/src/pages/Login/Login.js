@@ -39,7 +39,7 @@ class Login extends Component {
   }
 
   render() {
-    const { from } = this.props.location.state || { from: { pathname: "/secret" } };
+    const { from } = this.props.location.state || { from: { pathname: "/home" } };
     const { redirectToReferrer } = this.state;
 
     if (redirectToReferrer) {
@@ -47,7 +47,7 @@ class Login extends Component {
     }
 
     return (
-      <div className='Login'>
+      <div className='col-sm-12 col-lg-6 ml-3 Login'>
         <div className='row'>
           <div className='col'>
             <h1>Login</h1>
