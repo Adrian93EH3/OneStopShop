@@ -4,12 +4,14 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import CardColumns from "react-bootstrap/CardColumns";
 import Carousel from "react-bootstrap/Carousel";
+import Navigation from "../../components/Navigation/Navigation";
 const featured = require("./featured.json");
 
-class HomePage extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
+      <Navigation/>
         <Col lg={3}>
           <Carousel>
             <Carousel.Item interval={500}>
@@ -75,4 +77,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default Home;
