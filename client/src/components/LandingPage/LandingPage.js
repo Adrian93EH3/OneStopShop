@@ -10,7 +10,7 @@ function LandingPage() {
                     <div className="content">
                         <h1>OneStopShop</h1>
                         <h3>eCommerce</h3>
-                        <Link to="/home" className="button">ENTER!</Link>
+                        <Link to="/home" className="btn1">ENTER!</Link>
                     </div>
                 </div>
             </div>

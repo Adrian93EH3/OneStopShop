@@ -5,7 +5,7 @@ import Home from "../../pages/Home/Home";
 import Login from '../../pages/Login/Login';
 import Register from '../../pages/Register/Register';
 import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
-import Secret from '../../pages/Secret/Secret';
+import Admin from '../../pages/Admin/Admin';
 
 
 function routes() {
@@ -17,7 +17,7 @@ function routes() {
                 <Route exact path='/login' component={Login} />
                 <Route exact path='/register' component={Register} />
                 <Route exact path='/privateroute' component={PrivateRoute} />
-                <Route exact path='/secret' component={Secret} />
+                <Route exact path='/admin' component={Admin} />
             </div>
         </Router>
     )

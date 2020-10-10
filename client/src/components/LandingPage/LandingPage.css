@@ -6,7 +6,7 @@
     padding: 10px 10px;
   }
   
-  .content .button {
+  .content .btn1 {
     margin-top: 10px;
     width: 19.5%;
     padding: 10px 10px;
@@ -15,10 +15,10 @@
     animation-duration: .75s;
     animation-name: fadeInDown;
     text-decoration: none;
-    color: silver;
+    color: #c73237;
     border: 2px solid silver;
     border-radius: 10px;
-    padding-left: 15px;
+    padding-left: 5px;
     padding-right: 67px;
     display: flex;
     margin-left: 150px;
@@ -52,11 +52,11 @@
   
   .content h1 {
     font: 900 35pt/35pt sans-serif;
-    text-transform: uppercase;
-    color: #aef;
+    text-transform: capitalize;
+    color: #87b748;
     letter-spacing: -.85pt;
     opacity: 0;
-    /* -webkit-backface-visibility: hidden; */
+    font-family: 'Sansita Swashed', cursive !important;
     animation-delay: 2s;
     animation-fill-mode: both;
     animation-duration: .75s;
@@ -67,9 +67,9 @@
     font: 100 11pt/11pt sans-serif;
     display: inline-block;
     letter-spacing: 1pt;
-    color: #f88379;
+    color: #c73237;
     opacity: 0;
-    /* -webkit-backface-visibility: hidden; */
+    font-family: 'Sansita Swashed', cursive !important;
     animation-delay: 1.55s;
     animation-fill-mode: both;
     animation-duration: 1.25s;
@@ -77,34 +77,65 @@
   }
   
   @media (max-width: 320px) {
-    .content .button {
-      margin-left: 60px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .content .button {
-      margin-left: 130px;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .content .button {
+    .content .btn1 {
         margin-top: 10px;
         width: 19.5%;
         padding: 10px 10px;
         animation-delay: 2s;
+        font-family: 'Sansita Swashed', cursive !important;
         animation-fill-mode: both;
         animation-duration: .75s;
         animation-name: fadeInDown;
         text-decoration: none;
-        color: silver;
-        border: 2px solid silver;
+        color: #56b4b7;
+        border: 2px solid #ea9a4a;
         border-radius: 10px;
         padding-left: 15px;
-        padding-right: 65px;
+        padding-right: 80px;
         display: flex;
-        margin-left: 150px;
+        margin-left: 90px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .content .btn1 {
+        margin-top: 10px;
+        width: 19.5%;
+        padding: 10px 10px;
+        animation-delay: 2s;
+        font-family: 'Sansita Swashed', cursive !important;
+        animation-fill-mode: both;
+        animation-duration: .75s;
+        animation-name: fadeInDown;
+        text-decoration: none;
+        color: #56b4b7;
+        border: 2px solid #ea9a4a;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 80px;
+        display: flex;
+        margin-left: 90px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .content .btn1 {
+        margin-top: 10px;
+        width: 19.5%;
+        padding: 10px 10px;
+        animation-delay: 2s;
+        font-family: 'Sansita Swashed', cursive !important;
+        animation-fill-mode: both;
+        animation-duration: .75s;
+        animation-name: fadeInDown;
+        text-decoration: none;
+        color: #56b4b7;
+        border: 2px solid #ea9a4a;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 80px;
+        display: flex;
+        margin-left: 90px;
     }
   }
   
@@ -116,7 +147,7 @@
     position: absolute;
     width: 500px;
     height: 100%;
-    background: #f88379;
+    background:  #ea9a4a;
     left: 0;
     transform: translateX(-110%) skew(3deg);
     animation-fill-mode: both;
@@ -132,20 +163,20 @@
   .masthead:after {
     opacity: .3;
     animation-delay: .5s;
-    background: #aef;
+    background:  #56b4b7;
   }
   
   .wrapper:before {
     opacity: .4;
     animation-delay: .2s;
-    background: #aef;
+    background: #c73237;
     width: 100px;
   }
   
   .wrapper:after {
     opacity: .8;
     animation-delay: 0;
-    background: #f88379;
+    background: #87b748;
     width: 200px;
     animation-name: swipeLeft;
   }
