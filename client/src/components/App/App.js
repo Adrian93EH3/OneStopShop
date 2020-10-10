@@ -69,7 +69,6 @@ class App extends Component {
       <AuthContext.Provider value={this.state.auth}>
         <div className="App">
           <Navigation />
-<<<<<<< HEAD
           <Row>
             <Route exact path="/" component={Intro} />
             <Col lg={3}>
@@ -105,40 +104,6 @@ class App extends Component {
             </Switch>
           </Row>
           <Footer />
-=======
-        <Row>
-        <Col lg={3}>
-        <Card style={{ width: "12rem" }} id="navcolumn">
-          <Card.Header>Featured</Card.Header>
-          <ListGroup variant="flush">
-            <ListGroup.Item>
-              <Link to="/backpacks">Backpacks</Link>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <Link to="/shoes">Shoes</Link>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <Link to="/tech">Tech</Link>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <Link to="/clothes">Clothes</Link>
-            </ListGroup.Item>
-          </ListGroup>
-        </Card>
-        </Col>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <PrivateRoute path="/secret" component={Secret} />
-            <Route exact path="/backpacks" component={Backpack} />
-            <Route exact path="/shoes" component={Shoe} />
-            <Route exact path="/tech" component={Computer} />
-            <Route exact path="/clothes" component={Clothing} />
-            <Route component={NotFound} />
-          </Switch>
-        </Row>
->>>>>>> dbbc9baa2ed907d94828322c3a42930f2d7e69be
         </div>
       </AuthContext.Provider>
     );

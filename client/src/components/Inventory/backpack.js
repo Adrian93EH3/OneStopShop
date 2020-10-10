@@ -1,13 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-<<<<<<< HEAD
 import CardDeck from "react-bootstrap/CardDeck";
 import styled, { keyframes } from "styled-components";
 import { bounce, fadeIn, fadeInDown, flash, flipInX, headShake, jello, pulse, rollIn, rotateInDownLeft, rotateInDownRight, rubberBand, shake, slideInDown, swing, tada, wobble, zoomIn } from "react-animations";
-=======
-import CardColumns from "react-bootstrap/CardColumns";
-import '../App/App.css';
->>>>>>> dbbc9baa2ed907d94828322c3a42930f2d7e69be
 const backpack = require("./backpack.json");
 const Animate =[bounce, fadeIn, fadeInDown, flash, flipInX, headShake, jello, pulse, rollIn, rotateInDownLeft, rotateInDownRight, rubberBand, shake, slideInDown, swing, tada, wobble, zoomIn ]
 const AnimateDiv = styled.div`
