@@ -26,9 +26,9 @@ class Navigation extends Component {
       <>
         <div className="Navigation">
           <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3">
-            <Link className="navbar-brand" to="#">
-              Project 3
-            </Link>
+            <a className="navbar-brand">
+              OneStopShop
+            </a>
             <button
               className={togglerClass}
               onClick={this.toggleCollapse}
@@ -56,10 +56,10 @@ class Navigation extends Component {
                   <li className="nav-item">
                     <Link
                       className="nav-link"
-                      to="/secret"
+                      to="/admin"
                       onClick={this.toggleCollapse}
                     >
-                      Secret
+                      Admin
                     </Link>
                   </li>
                 )}

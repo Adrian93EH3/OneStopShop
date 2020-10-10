@@ -1,46 +1,88 @@
 body {
   margin: 0;
   padding: 0;
+  background-color:  #56b4b7;
+  
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.navbar {
+  font-family: 'Sansita Swashed', cursive !important;
+  color: #ea9a4a !important;
+}
 
 #navcolumn {
 border-style: solid;
 border-radius: 5px;
-border-color: darkgreen;
+border-color: #87b748;
 border-width: 2px;
 margin-right: 10px;
 margin-left: 10px;
+background-color:  white;
+font-family: 'Sansita Swashed', cursive !important;
+color: #ea9a4a !important;
 
 }
+/** 
+ * ===================================================================
+ * 10. intro - (_layout.scss) 
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #intro {
+	background: #151515 url(../src/components/Intro/open.jpg) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+.intro-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	opacity: .85;
+}
+
 
 .carousel-inner{
 border-style: solid !important;
 border-radius: 5px !important;
-border-color: darkgreen !important;
+border-color: #87b748!important;
 border-width: 2px !important;
 margin-top: 10px !important;
+margin-left: 10px !important;
+margin-right: 10px !important;
 display: inline-block !important;
 }
 
-body {
-  background-color: rgb(215, 218, 184);
+.card-deck {
+  margin-left: 25px !important;
 }
+
 
 .card {
 margin-top: 15px;
 border-style: solid;
 border-radius: 5px;
-border-color: darkgreen;
+border-color: #87b748;
 border-width: 2px;
 }
 
@@ -53,4 +95,95 @@ border-width: 2px;
   margin-left: 30px;
   margin-top: 15px;
   text-decoration: underline;
+}
+a:link {
+  color: #ea9a4a !important;
+}
+a:visited {
+  color: #87b748 !important;
+}
+a:hover {
+  color: #56b4b7 !important;
+}
+a:active {
+  color: #c73237 !important;
+}
+
+.form-label {
+  font-family: 'Sansita Swashed', cursive !important;
+}
+
+.btn{
+  font-family: 'Sansita Swashed', cursive !important;
+}
+
+/** 
+ * ===================================================================
+ * 18. footer - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ footer {
+	padding-bottom: 3rem;
+	font-size: 1.4rem;
+  font-family: "poppins-regular", sans-serif;
+  background-color: black;
+  Margin-top: 20px;
+}
+
+footer .row {
+	max-width: 900px;
+}
+footer .social {
+	text-align: center;
+}
+footer .footer-social {
+	display: inline-block;
+	font-size: 2.1rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -.3rem;
+}
+footer .footer-social li {
+	display: inline-block;
+	margin: 0 12px;
+	padding: 0;
+}
+
+footer .copyright span {
+  display: inline-block;
+  color: #e7e7e7;
+}
+footer .copyright span::after {
+	content: "|";
+	display: inline-block;
+	padding: 0 1rem 0 1.2rem;
+	color: #e7e7e7;
+}
+footer .copyright span:last-child::after {
+	display: none;
+}
+
+/**
+ * responsive:
+ * footer
+ * -------------------------------------------------------------------
+ */
+@media only screen and (max-width:768px) {
+	footer {
+		text-align: center;
+	}
+	footer .social {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+	footer .copyright span {
+		display: block;
+	}
+	footer .copyright span::after {
+		display: none;
+	}
 }
