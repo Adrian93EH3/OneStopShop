@@ -17,6 +17,8 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
 import "./App.css";
+import Computer from "../Inventory/computer";
+import Clothing from "../Inventory/clothing";
 
 class App extends Component {
   constructor(props) {
@@ -90,6 +92,8 @@ class App extends Component {
             <PrivateRoute path="/secret" component={Secret} />
             <Route exact path="/backpacks" component={Backpack} />
             <Route exact path="/shoes" component={Shoe} />
+            <Route exact path="/tech" component={Computer} />
+            <Route exact path="/clothes" component={Clothing} />
             <Route component={NotFound} />
           </Switch>
         </Row>

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import CardColumns from "react-bootstrap/CardColumns";
+import '../App/App.css';
 const backpack = require("./backpack.json");
 
 class Backpack extends React.Component {
