@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, } from 'react-router-dom';
 import './index.css';
 import App from './components/App/App';
+import LandingPage from "../src/pages/LandingPage/LandingPage";
 import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
   <BrowserRouter>
+  <Switch>
+  <Route exact path='/' component={LandingPage} />
   <App />
+  </Switch>
   </BrowserRouter>,
   document.getElementById('root'));
 
