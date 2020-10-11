@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import AuthDropdown from "../../components/AuthDropdown/AuthDropdown";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import Col from "react-bootstrap/Col";
+
 
 class Navigation extends Component {
   static contextType = AuthContext;
