@@ -14,6 +14,7 @@ import Backpack from "../../pages/Backpack/backpack";
 import Shoe from "../../pages/Shoe/shoe";
 import Computer from "../../pages/Computer/computer";
 import Clothes from "../../pages/Clothes/clothing";
+import Cart from "../../pages/Cart/cart";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -48,8 +49,14 @@ class App extends Component {
         onLogin: this.handleLogin,
         onLogout: this.handleLogout,
       },
+      cart:[],
+  
     };
   }
+
+
+   addToCart = (item) => this.setState(currentCart => ({cart: [...currentCart.cart, item]}));
+
 
   componentDidMount() {
     const { authToken } = this.state.auth;
@@ -67,7 +74,7 @@ class App extends Component {
     return (
       <AuthContext.Provider value={this.state.auth}>
         <div className="App">
-          <Navigation />
+          <Navigation cart ={this.state.cart}/>
           <section id="intro">
           <div className="intro-overlay"></div>
           <div className="container-fluid">
@@ -97,10 +104,11 @@ class App extends Component {
                   <Route path="/login" component={Login} />
                   <Route path="/register" component={Register} />
                   <PrivateRoute path="/admin" component={Admin} />
-                  <Route exact path="/backpacks" component={Backpack} />
+                  <Route exact path="/backpacks" render={props=><Backpack cart={this.state.cart} cartUpdate={this.addToCart}/>} />
                   <Route exact path="/shoes" component={Shoe} />
                   <Route exact path="/tech" component={Computer} />
                   <Route exact path="/clothes" component={Clothes} />
+                  <Route exact path="/cart" render={props=><Cart cart={this.state.cart} cartUpdate={this.addToCart}/>} />
                   <Route component={NotFound} />
                 </Switch>
               </Col>

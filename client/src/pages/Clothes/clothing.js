@@ -1,4 +1,4 @@
-import React, { componentDidMount } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Modal from "react-bootstrap/Modal";

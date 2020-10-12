@@ -46,17 +46,28 @@ const Animate = [
   zoomIn,
 ];
 
+
+
+
+
+
 class Backpack extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor() {
+    super();
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
       show: null,
-      backpackData: []
+      backpackData: [],
+      currentCart: []
     };
+  }
+
+  addToCart(item) {
+    this.setState({ currentCart: [...this.state.currentCart, item]});
+    console.log(this.state.currentCart);
   }
 
   handleClose() {
@@ -65,6 +76,7 @@ class Backpack extends React.Component {
 
   handleShow(id) {
     this.setState({ show: id });
+    console.log(this.state);
   }
 
   componentDidMount() {
@@ -117,6 +129,7 @@ class Backpack extends React.Component {
                     ${item.price}
                   </Modal.Body>
                   <Modal.Footer>
+                  <button className='btn btn-primary' type='submit' onClick={() => this.props.cartUpdate(item)}>Add to Cart</button>
                     <Button
                       variant="secondary"
                       onClick={() => this.handleClose(item._id)}
