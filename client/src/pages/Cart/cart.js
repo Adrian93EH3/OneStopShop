@@ -19,7 +19,7 @@ const items = [
   },
 ];
 
-const Shop = () => {
+const Shop = props => {
   const [cart, setCart] = React.useState([]);
   const cartTotal = cart.reduce((total, { price = 0 }) => total + price, 0);
 

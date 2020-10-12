@@ -66,7 +66,7 @@ class Backpack extends React.Component {
   }
 
   addToCart(item) {
-    this.setState(prevState => ({ currentCart: [...this.state.currentCart, item]}));
+    this.setState({ currentCart: [...this.state.currentCart, item]});
     console.log(this.state.currentCart);
   }
 
@@ -129,7 +129,7 @@ class Backpack extends React.Component {
                     ${item.price}
                   </Modal.Body>
                   <Modal.Footer>
-                  <button className='btn btn-primary' type='submit' onClick={() => this.addToCart(item)}>Add to Cart</button>
+                  <button className='btn btn-primary' type='submit' onClick={() => this.props.cartUpdate(item)}>Add to Cart</button>
                     <Button
                       variant="secondary"
                       onClick={() => this.handleClose(item._id)}
