@@ -47,7 +47,7 @@ class Login extends Component {
     }
 
     return (
-      <div className='col-sm-12 col-lg-6 ml-3 Login'>
+      <div className='col-sm-8 mx-auto Login'>
         <div className='row'>
           <div className='col'>
             <h1>Login</h1>

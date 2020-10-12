@@ -18,11 +18,10 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
-import Footer from "../Footer/footer"
-import Intro from "../Intro/intro";
+import Footer from "../Footer/footer";
+
 
 import "./App.css";
-
 
 class App extends Component {
   constructor(props) {
@@ -69,39 +68,45 @@ class App extends Component {
       <AuthContext.Provider value={this.state.auth}>
         <div className="App">
           <Navigation />
-          <Row>
-            <Route exact path="/home" component={Intro} />
-            <Col lg={3}>
-              <Card style={{ width: "12rem" }} id="navcolumn">
-                <Card.Header>Featured</Card.Header>
-                <ListGroup variant="flush">
-                  <ListGroup.Item>
-                    <Link to="/backpacks">Backpacks</Link>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Link to="/shoes">Shoes</Link>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Link to="/tech">Tech</Link>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Link to="/clothes">Clothes</Link>
-                  </ListGroup.Item>
-                </ListGroup>
-              </Card>
-            </Col>
-            <Switch>
-              <Route exact path="/home" component={Home} />
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-              <PrivateRoute path="/admin" component={Admin} />
-              <Route exact path="/backpacks" component={Backpack} />
-              <Route exact path="/shoes" component={Shoe} />
-              <Route exact path="/tech" component={Computer} />
-              <Route exact path="/clothes" component={Clothes} />
-              <Route component={NotFound} />
-            </Switch>
-          </Row>
+          <section id="intro">
+          <div className="intro-overlay"></div>
+          <div className="container-fluid">
+            <Row >
+              <Col sm={2}>
+                <Card style={{ width: "12rem" }} id="navcolumn">
+                  <Card.Header>Featured</Card.Header>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      <Link to="/backpacks">Backpacks</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <Link to="/shoes">Shoes</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <Link to="/tech">Tech</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <Link to="/clothes">Clothes</Link>
+                    </ListGroup.Item>
+                  </ListGroup>
+                </Card>
+              </Col>
+              <Col sm={10} className="mx-auto">
+                <Switch>
+                  <Route exact path="/home" component={Home} />
+                  <Route path="/login" component={Login} />
+                  <Route path="/register" component={Register} />
+                  <PrivateRoute path="/admin" component={Admin} />
+                  <Route exact path="/backpacks" component={Backpack} />
+                  <Route exact path="/shoes" component={Shoe} />
+                  <Route exact path="/tech" component={Computer} />
+                  <Route exact path="/clothes" component={Clothes} />
+                  <Route component={NotFound} />
+                </Switch>
+              </Col>
+            </Row>
+          </div>
+          </section>
           <Footer />
         </div>
       </AuthContext.Provider>
