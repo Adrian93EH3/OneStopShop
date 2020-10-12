@@ -14,6 +14,7 @@ import Backpack from "../../pages/Backpack/backpack";
 import Shoe from "../../pages/Shoe/shoe";
 import Computer from "../../pages/Computer/computer";
 import Clothes from "../../pages/Clothes/clothing";
+import Cart from "../../pages/Cart/cart";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -101,6 +102,7 @@ class App extends Component {
                   <Route exact path="/shoes" component={Shoe} />
                   <Route exact path="/tech" component={Computer} />
                   <Route exact path="/clothes" component={Clothes} />
+                  <Route exact path="/cart" component={Cart} />
                   <Route component={NotFound} />
                 </Switch>
               </Col>

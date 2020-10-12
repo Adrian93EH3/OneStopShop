@@ -19,22 +19,22 @@ class Footer extends Component {
               <span>© Copyright 2020 </span>
               <span>Design by</span>
               <span>
-              <a target="_blank" href="https://www.linkedin.com/in/aaron-stoiano-4949561ab/">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aaron-stoiano-4949561ab/">
                   Aaron
                 </a>
               </span>
               <span>
-              <a target="_blank" href="https://www.linkedin.com/in/adrian-diaz-81044a1aa/">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/adrian-diaz-81044a1aa/">
                   Adrian
                 </a>
               </span>
               <span>
-              <a target="_blank" href="https://www.linkedin.com/in/daniel-gerrald-493b89165/">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-gerrald-493b89165/">
                   Daniel
                 </a>
               </span>
               <span>
-                <a target="_blank" href="https://www.linkedin.com/in/steven-mercure-2987131b1/">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/steven-mercure-2987131b1/">
                   Steven
                 </a>
               </span>
