@@ -129,7 +129,7 @@ const productSeed = [
             "image": "ItachiF.png",
             "name": "Primitive x Naruto Crows Burgundy Coaches Jacket",
             "price": 75.00,
-            "category": "Clothinbg",
+            "category": "Clothing",
             "description": "Layer up in iconic anime swag with the Crows burgundy coaches jacket from Primitive x Naruto. This burgundy coaches jacket features a classic foldover collar, button-up placket, and collaborative Primitive and Naruto graphics screen-printed at the left chest and back to complete the design."
         },
         {
@@ -291,7 +291,7 @@ const productSeed = [
             "name": "Speed Sneaker Graffiti",
             "price": 825.00,
             "category": "Shoes",
-            "description": "The sock-like shoes are very lightweight coming in at 240g making it feel like there is a could unter your feet, the sould has the logo on the side of it."
+            "description": "The sock-like design are very lightweight coming in at 240g making it feel like there is a could unter your feet, the sould has the logo on the side of it."
         },
         {
             "image": "diorwhitegray.png",
@@ -304,7 +304,7 @@ const productSeed = [
             "image": "BPlatform.png",
             "name": "Strike 20mm Lace-Up Boot",
             "price": 950.00,
-            "category": "Shoe",
+            "category": "Shoes",
             "description": "This platform boot is mad efor smooth mat calfskin, with tone-on-tone lacing and stitching, and thick toothed rubber outsole."
         },
         {
