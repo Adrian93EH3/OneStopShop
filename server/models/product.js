@@ -3,7 +3,10 @@ const { string, number } = require('yup');
 const Schema = mongoose.Schema;
 
 const ProductsSchema = new Schema({
-    image: {},
+    image: {
+        type: String,
+        required: true,
+    },
     name: {
         type: String,
         required: true
