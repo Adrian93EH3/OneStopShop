@@ -127,7 +127,7 @@ class Secret extends Component {
 
   render() {
     return (
-      <div className="col-lg-6 ml-4 mr-4 justify-content-sm-center">
+      <div className="col-sm-6 ml-4 mr-4 justify-content-sm-center">
         <FormExample />
       </div>
     );

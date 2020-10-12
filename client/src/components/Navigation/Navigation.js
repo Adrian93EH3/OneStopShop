@@ -3,19 +3,20 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import AuthDropdown from "../../components/AuthDropdown/AuthDropdown";
 
+
 class Navigation extends Component {
   static contextType = AuthContext;
-
+  
   state = {
     collapsed: true,
   };
-
+  
   toggleCollapse = () => {
     this.setState({
       collapsed: !this.state.collapsed,
     });
   };
-
+  
   render() {
     const { user } = this.context;
     const { collapsed } = this.state;
@@ -26,7 +27,7 @@ class Navigation extends Component {
       <>
         <div className="Navigation">
           <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3">
-            <a className="navbar-brand">
+            <a href="#" className="navbar-brand">
               OneStopShop
             </a>
             <button
@@ -46,7 +47,7 @@ class Navigation extends Component {
                 <li className="nav-item">
                   <Link
                     className="nav-link"
-                    to="/"
+                    to="/home"
                     onClick={this.toggleCollapse}
                   >
                     Home

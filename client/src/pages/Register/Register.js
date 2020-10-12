@@ -31,7 +31,7 @@ class Register extends Component {
       return <Redirect to={from} />;
     }
     return (
-      <div className='Register'>
+      <div className='col-sm-8 mx-auto Register'>
         <div className='row'>
           <div className='col'>
             <h1>Register</h1>

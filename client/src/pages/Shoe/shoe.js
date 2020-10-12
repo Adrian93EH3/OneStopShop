@@ -1,9 +1,6 @@
-import React, { Component } from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
-import Carousel from "react-bootstrap/Carousel";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
@@ -49,7 +46,7 @@ const Animate = [
   zoomIn,
 ];
 
-class Home extends Component {
+class Shoe extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -68,57 +65,25 @@ class Home extends Component {
   handleShow(id) {
     this.setState({ show: id });
   }
-
   render() {
     return (
-      <>
-        <Col className="mx-auto" sm={4}>
-          <Carousel style={{ width: "23rem", height: "25rem" }}>
-            <Carousel.Item interval={1000}>
-              <img
-                className="d-block w-100"
-                src={"../images/leather.png"}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item interval={500}>
-              <img
-                className="d-block w-100"
-                src={"../images/AF1.png"}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={"../images/burberrybp.png"}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-
-        <Row className="mx-auto">
-          <Col sm={12}>
-            <CardDeck>
-              {data.featured.map((item) => {
-                let randomIndex = Math.floor(Math.random() * Animate.length);
-                let AnimateDiv = styled.div`
-                  animation: 2s ${keyframes`${Animate[randomIndex]}`};
-                `;
-                return (
-                  <AnimateDiv key={item.id}>
-                    <Card
-                      style={{ width: "15rem", height: "25rem" }}
-                      onClick={() => this.handleShow(item.id)}
-                    >
-                      <Card.Img variant="top" src={`../images/${item.image}`} />
-                      <Card.Body>
-                        <Card.Title>{item.name}</Card.Title>
-                        <Card.Title>{item.price}</Card.Title>
-                      </Card.Body>
-                    </Card>
-                    <Modal
+      <div>
+        <CardDeck>
+          {data.shoe.map((item) => {
+            let randomIndex = Math.floor(Math.random() * Animate.length);
+            let AnimateDiv = styled.div`
+              animation: 2s ${keyframes`${Animate[randomIndex]}`};
+            `;
+            return (
+              <AnimateDiv key={item.id}>
+                <Card style={{ width: "15rem", height: "25rem" }} onClick={() => this.handleShow(item.id)}>
+                  <Card.Img variant="top" src={`../images/${item.image}`} />
+                  <Card.Body>
+                    <Card.Title>{item.name}</Card.Title>
+                    <Card.Title>{item.price}</Card.Title>
+                  </Card.Body>
+                </Card>
+                <Modal
                       show={this.state.show === item.id}
                       onHide={() => this.handleClose(item.id)}
                     >
@@ -145,15 +110,13 @@ class Home extends Component {
                         </Button>
                       </Modal.Footer>
                     </Modal>
-                  </AnimateDiv>
-                );
-              })}
-            </CardDeck>
-          </Col>
-        </Row>
-      </>
+              </AnimateDiv>
+            );
+          })}
+        </CardDeck>
+      </div>
     );
   }
 }
 
-export default Home;
+export default Shoe;
