@@ -18,3 +18,5 @@ productsController.get('/', (req, res) => {
 productsController.post('/', (req, res) => {
 
 })
+
+module.exports = productsController;
