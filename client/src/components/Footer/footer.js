@@ -19,7 +19,7 @@ class Footer extends Component {
               <span>© Copyright 2020 </span>
               <span>Design by</span>
               <span>
-              <a target="_blank" href="https://www.linkedin.com/in/daniel-gerrald-493b89165/">
+              <a target="_blank" href="https://www.linkedin.com/in/aaron-stoiano-4949561ab/">
                   Aaron
                 </a>
               </span>
