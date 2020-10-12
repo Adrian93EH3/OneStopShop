@@ -20,8 +20,11 @@ function FormExample() {
       validationSchema={schema}
       onSubmit={console.log}
       initialValues={{
-        firstName: "",
-        lastName: "",
+        category: "",
+        itemName: "",
+        itemDescription: "",
+        salePrice: "",
+        image: ""
       }}
     >
       {({ handleSubmit, handleChange, values, errors }) => (
