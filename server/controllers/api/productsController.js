@@ -10,13 +10,18 @@ productsController.get('/', (req, res) => {
             res.json(data);
         })
         .catch(err => {
-            console.log(err)
+            console.log(err);
             res.json(err)
         })
 })
 
 productsController.post('/', (req, res) => {
-
+    db.Products.create(req.body).then(data => {
+        res.json(data)
+    }).catch(err => {
+        console.log(err);
+        res.json(err)
+    })
 })
 
 module.exports = productsController;

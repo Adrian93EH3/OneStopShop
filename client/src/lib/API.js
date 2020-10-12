@@ -27,5 +27,16 @@ export default {
         }
       });
     }
+  },
+
+  Products: {
+    getAllProducts: function() {
+      return axios.get('/api/products', {})
+    },
+
+    createProduct: function(productObj) {
+      return axios.post('/api/products', productObj)
+    }
   }
+
 }
