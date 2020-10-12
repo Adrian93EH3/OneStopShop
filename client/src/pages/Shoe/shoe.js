@@ -4,6 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
+import API from '../../lib/API';
 import {
   bounce,
   fadeIn,
@@ -24,7 +25,6 @@ import {
   wobble,
   zoomIn,
 } from "react-animations";
-const data = require("../../components/Data/data.json");
 const Animate = [
   bounce,
   fadeIn,
@@ -55,6 +55,7 @@ class Shoe extends React.Component {
 
     this.state = {
       show: null,
+      shoesData: []
     };
   }
 
@@ -65,27 +66,41 @@ class Shoe extends React.Component {
   handleShow(id) {
     this.setState({ show: id });
   }
+
+  componentDidMount() {
+    API.Products.getAllProducts()
+      .then(data => {
+        console.log(data)
+        const shoesData = data.data.filter(val => {
+          console.log(val.category)
+          return val.category === "Shoes"
+        })
+        console.log(shoesData)
+        this.setState({ shoesData: shoesData });
+      })
+  }
+
   render() {
     return (
       <div>
         <CardDeck>
-          {data.shoe.map((item) => {
+          {this.state.shoesData.map((item) => {
             let randomIndex = Math.floor(Math.random() * Animate.length);
             let AnimateDiv = styled.div`
               animation: 2s ${keyframes`${Animate[randomIndex]}`};
             `;
             return (
-              <AnimateDiv key={item.id}>
-                <Card style={{ width: "15rem", height: "25rem" }} onClick={() => this.handleShow(item.id)}>
+              <AnimateDiv key={item._id}>
+                <Card style={{ width: "15rem", height: "25rem" }} onClick={() => this.handleShow(item._id)}>
                   <Card.Img variant="top" src={`../images/${item.image}`} />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
-                    <Card.Title>{item.price}</Card.Title>
+                    <Card.Title>${item.price}</Card.Title>
                   </Card.Body>
                 </Card>
                 <Modal
-                      show={this.state.show === item.id}
-                      onHide={() => this.handleClose(item.id)}
+                      show={this.state.show === item._id}
+                      onHide={() => this.handleClose(item._id)}
                     >
                       <Modal.Header closeButton>
                         <Modal.Title>
@@ -99,12 +114,12 @@ class Shoe extends React.Component {
                       </Modal.Header>
                       <Modal.Body>{item.description}</Modal.Body>
                       <Modal.Body style={{ fontWeight: "bold" }}>
-                        {item.price}
+                        ${item.price}
                       </Modal.Body>
                       <Modal.Footer>
                         <Button
                           variant="secondary"
-                          onClick={() => this.handleClose(item.id)}
+                          onClick={() => this.handleClose(item._id)}
                         >
                           Close
                         </Button>
