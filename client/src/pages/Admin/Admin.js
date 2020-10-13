@@ -19,96 +19,96 @@ const schema = yup.object({
 function FormExample() {
   return (
     <Card>
-    <div id="formCard"></div>
-    <Formik
-      validationSchema={schema}
-      onSubmit={console.log}
-      initialValues={{
-        category: "",
-        name: "",
-        description: "",
-        price: "",
-        image: ""
-      }}
-    >
-      {({ handleSubmit, handleChange, values, errors }) => (
-        <Form noValidate onSubmit={handleSubmit} id="form">
-          <Form.Row>
-            <Form.Group as={Col} controlId="exampleForm.SelectCustomSizeSm">
-              <Form.Label>Category</Form.Label>
-              <Form.Control
-                as="select"
-                name="category"
-                value={values.category}
-                custom
-              >
-                <option>Backpacks</option>
-                <option>Shoes</option>
-                <option>Tech</option>
-                <option>Clothes</option>
-              </Form.Control>
-            </Form.Group>
-          </Form.Row>
+      <div id="formCard"></div>
+      <Formik
+        validationSchema={schema}
+        onSubmit={console.log}
+        initialValues={{
+          category: "",
+          name: "",
+          description: "",
+          price: "",
+          image: ""
+        }}
+      >
+        {({ handleSubmit, handleChange, values, errors }) => (
+          <Form noValidate onSubmit={handleSubmit} id="form">
+            <Form.Row>
+              <Form.Group as={Col} controlId="exampleForm.SelectCustomSizeSm">
+                <Form.Label>Category</Form.Label>
+                <Form.Control
+                  as="select"
+                  name="category"
+                  value={values.category}
+                  custom
+                >
+                  <option>Backpacks</option>
+                  <option>Shoes</option>
+                  <option>Tech</option>
+                  <option>Clothes</option>
+                </Form.Control>
+              </Form.Group>
+            </Form.Row>
 
-          <Form.Row>
-            <Form.Group as={Col} controlId="validationFormik101">
-              <Form.Label>Item Name</Form.Label>
-              <Form.Control
-                type="text"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-                isInvalid={!!errors.name}
-              />
-              <Form.Control.Feedback type="invalid" tooltip>
-                {errors.name}
-              </Form.Control.Feedback>
-            </Form.Group>
-          </Form.Row>
-
-          <Form.Row>
-            <Form.Group as={Col} controlId="validationFormik103">
-              <Form.Label>Item Description</Form.Label>
-              <Form.Control
-                type="text"
-                as="textarea"
-                name="description"
-                value={values.description}
-                onChange={handleChange}
-                isInvalid={!!errors.description}
-              />
-              <Form.Control.Feedback type="invalid" tooltip>
-                {errors.description}
-              </Form.Control.Feedback>
-            </Form.Group>
-          </Form.Row>
-
-          <Form.Row>
-            <Form.Group as={Col} controlId="validationFormik103">
-              <Form.Label>Sale Price</Form.Label>
-              <InputGroup>
-                <InputGroup.Prepend>
-                  <InputGroup.Text id="inputGroupPrepend">$</InputGroup.Text>
-                </InputGroup.Prepend>
+            <Form.Row>
+              <Form.Group as={Col} controlId="validationFormik101">
+                <Form.Label>Item Name</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Price"
-                  aria-describedby="inputGroupPrepend"
-                  name="price"
-                  value={values.price}
+                  name="name"
+                  value={values.name}
                   onChange={handleChange}
-                  isInvalid={!!errors.price}
+                  isInvalid={!!errors.name}
                 />
                 <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.price}
+                  {errors.name}
                 </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-          </Form.Row>
+              </Form.Group>
+            </Form.Row>
 
-          <Form.Group>
-          <Form.Label>Image</Form.Label>
-            <Form.Control
+            <Form.Row>
+              <Form.Group as={Col} controlId="validationFormik103">
+                <Form.Label>Item Description</Form.Label>
+                <Form.Control
+                  type="text"
+                  as="textarea"
+                  name="description"
+                  value={values.description}
+                  onChange={handleChange}
+                  isInvalid={!!errors.description}
+                />
+                <Form.Control.Feedback type="invalid" tooltip>
+                  {errors.description}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+              <Form.Group as={Col} controlId="validationFormik103">
+                <Form.Label>Sale Price</Form.Label>
+                <InputGroup>
+                  <InputGroup.Prepend>
+                    <InputGroup.Text id="inputGroupPrepend">$</InputGroup.Text>
+                  </InputGroup.Prepend>
+                  <Form.Control
+                    type="text"
+                    placeholder="Price"
+                    aria-describedby="inputGroupPrepend"
+                    name="price"
+                    value={values.price}
+                    onChange={handleChange}
+                    isInvalid={!!errors.price}
+                  />
+                  <Form.Control.Feedback type="invalid" tooltip>
+                    {errors.price}
+                  </Form.Control.Feedback>
+                </InputGroup>
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Group>
+              <Form.Label>Image</Form.Label>
+              <Form.Control
                 type="text"
                 name="image"
                 value={values.image}
@@ -116,13 +116,13 @@ function FormExample() {
                 isInvalid={!!errors.image}
               />
               <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.image}
-                </Form.Control.Feedback>
-          </Form.Group>
-          <Button type="submit">Submit form</Button>
-        </Form>
-      )}
-    </Formik>
+                {errors.image}
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Button type="submit">Submit form</Button>
+          </Form>
+        )}
+      </Formik>
     </Card>
   );
 }
