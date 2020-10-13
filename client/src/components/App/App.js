@@ -96,7 +96,7 @@ class App extends Component {
               <Row>
                 <Col sm={2}>
                   <Card style={{ width: "12rem" }} id="navcolumn">
-                    <Card.Header>Featured</Card.Header>
+                    <Card.Header>Categories</Card.Header>
                     <ListGroup variant="flush">
                       <ListGroup.Item>
                         <Link to="/backpacks">Backpacks</Link>
