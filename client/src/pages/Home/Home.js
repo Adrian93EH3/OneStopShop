@@ -7,7 +7,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
-import API from '../../lib/API';
+import API from "../../lib/API";
 import {
   bounce,
   fadeIn,
@@ -50,15 +50,15 @@ const Animate = [
 ];
 
 class Home extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor() {
+    super();
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
       show: null,
-      featuredData: []
+      featuredData: [],
     };
   }
 
@@ -71,16 +71,15 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    API.Products.getAllProducts()
-      .then(data => {
-        console.log(data)
-        const featuredData = data.data.filter(val => {
-          console.log(val.category)
-          return val.category === "Featured"
-        })
-        console.log(featuredData)
-        this.setState({ featuredData: featuredData });
-      })
+    API.Products.getAllProducts().then((data) => {
+      console.log(data);
+      const featuredData = data.data.filter((val) => {
+        console.log(val.category);
+        return val.category === "Featured";
+      });
+      console.log(featuredData);
+      this.setState({ featuredData: featuredData });
+    });
   }
 
   render() {
@@ -151,6 +150,16 @@ class Home extends Component {
                         ${item.price}
                       </Modal.Body>
                       <Modal.Footer>
+                        <button
+                          className="btn btn-primary"
+                          type="submit"
+                          onClick={() => {
+                            this.props.cartUpdate(item);
+                            this.handleClose(item._id);
+                          }}
+                        >
+                          Add to Cart
+                        </button>
                         <Button
                           variant="secondary"
                           onClick={() => this.handleClose(item._id)}

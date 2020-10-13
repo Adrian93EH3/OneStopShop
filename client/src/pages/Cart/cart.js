@@ -1,72 +1,47 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+import ListGroup from "react-bootstrap/ListGroup";
+import Button from "react-bootstrap/Button";
 
-const items = [
-  {
-    id: 1,
-    name: "overwatch",
-    price: 20,
-  },
-  {
-    id: 2,
-    name: "minecraft",
-    price: 32,
-  },
-  {
-    id: 3,
-    name: "fortnite",
-    price: 51,
-  },
-];
+const Shop = (props) => {
+  const cartTotal = props.cart.reduce(
+    (total, { price = 0 }) => total + price,
+    0
+  );
 
-const Shop = props => {
-  const [cart, setCart] = React.useState([]);
-  const cartTotal = cart.reduce((total, { price = 0 }) => total + price, 0);
+  const amountOfItems = (id) =>
+    props.cart.filter((item) => item._id === id).length;
 
-  const addToCart = (item) => setCart((currentCart) => [...currentCart, item]);
-
-  const removeFromCart = (item) => {
-    setCart((currentCart) => {
-      const indexOfItemToRemove = currentCart.findIndex((cartItem) => cartItem.id === item.id);
-
-      if (indexOfItemToRemove === -1) {
-        return currentCart;
-      }
-
-      return [
-        ...currentCart.slice(0, indexOfItemToRemove),
-        ...currentCart.slice(indexOfItemToRemove + 1),
-      ];
-    });
+  const distinct = (value, index, self) => {
+    return self.indexOf(value) === index;
   };
+  const newCart = props.cart.filter(distinct);
 
-  const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
-
-  const listItemsToBuy = () => items.map((item) => (
-    <div key={item.id}>
-      {`${item.name}: $${item.price}`}
-      <button type="submit" onClick={() => addToCart(item)}>Add</button>
-    </div>
-  ));
-
-  const listItemsInCart = () => items.map((item) => (
-    <div key={item.id}>
-      ({amountOfItems(item.id)} x ${item.price}) {`${item.name}`}
-      <button type="submit" onClick={() => removeFromCart(item)}>Remove</button>
-    </div>
-  ));
+  const listItemsInCart = () =>
+    newCart.map((item) => (
+      <div key={item._id}>
+        <div>
+          <Image src={`../images/${item.image}`} alt={item.name} thumbnail />{" "}
+          {`${item.name}`} ({amountOfItems(item._id)} x ${item.price})<br/>
+          <Button type="submit" onClick={() => props.removeFromCart(item)}>Remove</Button>
+        </div>
+      </div>
+    ));
 
   return (
-    <div>
-    <Card>
-      STORE
-      <div>{listItemsToBuy()}</div>
-      <div>CART</div>
-      <div>{listItemsInCart()}</div>
-      <div>Total: ${cartTotal}</div>
-      <div>
-        <button onClick={() => setCart([])}>Clear</button>
-      </div>
+    <div className="col-sm-9 mx-auto">
+        <h1>Cart</h1>
+      <Card className="align-items-left">
+        <ListGroup>
+          {newCart==0 ? (<ListGroup.Item><h1 style={{textAlign: "center"}}>Cart is Empty</h1></ListGroup.Item>) : (<ListGroup.Item>{listItemsInCart()}</ListGroup.Item>)}
+        </ListGroup>
+        <Card.Title>Total: ${cartTotal}</Card.Title>
+        <div>
+        <Button className="mx-2 mb-2" type="submit" onClick={() => props.cart.setState([])}>Empty Cart</Button>
+        
+        <Button className="rickRoll mx-2 mb-2" type="submit" href="https://youtu.be/ub82Xb1C8os">Check Out</Button>
+        </div>
       </Card>
     </div>
   );

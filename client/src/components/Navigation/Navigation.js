@@ -66,7 +66,15 @@ class Navigation extends Component {
                 )}
               </ul>
               <ul className="navbar-nav">
-              <li>items in cart:  {this.props.cart.length}</li>
+              <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/cart"
+                    onClick={this.toggleCollapse}
+                  >
+                    <i className="fa fa-shopping-cart" aria-hidden="true">  {this.props.cart.length}</i> 
+                  </Link>
+                </li>
                 {user ? (
                   <AuthDropdown onClick={this.toggleCollapse} />
                 ) : (

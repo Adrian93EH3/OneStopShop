@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
-import API from '../../lib/API';
+import API from "../../lib/API";
 import {
   bounce,
   fadeIn,
@@ -46,11 +46,6 @@ const Animate = [
   zoomIn,
 ];
 
-
-
-
-
-
 class Backpack extends React.Component {
   constructor() {
     super();
@@ -61,13 +56,7 @@ class Backpack extends React.Component {
     this.state = {
       show: null,
       backpackData: [],
-      currentCart: []
     };
-  }
-
-  addToCart(item) {
-    this.setState({ currentCart: [...this.state.currentCart, item]});
-    console.log(this.state.currentCart);
   }
 
   handleClose() {
@@ -80,16 +69,15 @@ class Backpack extends React.Component {
   }
 
   componentDidMount() {
-    API.Products.getAllProducts()
-      .then(data => {
-        console.log(data)
-        const backpackData = data.data.filter(val => {
-          console.log(val.category)
-          return val.category === "Backpack"
-        })
-        console.log(backpackData)
-        this.setState({ backpackData: backpackData });
-      })
+    API.Products.getAllProducts().then((data) => {
+      console.log(data);
+      const backpackData = data.data.filter((val) => {
+        console.log(val.category);
+        return val.category === "Backpack";
+      });
+      console.log(backpackData);
+      this.setState({ backpackData: backpackData });
+    });
   }
 
   render() {
@@ -129,7 +117,16 @@ class Backpack extends React.Component {
                     ${item.price}
                   </Modal.Body>
                   <Modal.Footer>
-                  <button className='btn btn-primary' type='submit' onClick={() => this.props.cartUpdate(item)}>Add to Cart</button>
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      onClick={() => {
+                        this.props.cartUpdate(item);
+                        this.handleClose(item._id);
+                      }}
+                    >
+                      Add to Cart
+                    </button>
                     <Button
                       variant="secondary"
                       onClick={() => this.handleClose(item._id)}

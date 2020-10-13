@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import AuthContext from "../../contexts/AuthContext";
+import Card from "react-bootstrap/Card";
 import { Formik } from "formik";
 import * as yup from "yup";
 
@@ -16,6 +17,8 @@ const schema = yup.object({
 
 function FormExample() {
   return (
+    <Card>
+    <div id="formCard"></div>
     <Formik
       validationSchema={schema}
       onSubmit={console.log}
@@ -119,6 +122,7 @@ function FormExample() {
         </Form>
       )}
     </Formik>
+    </Card>
   );
 }
 
