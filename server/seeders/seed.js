@@ -404,7 +404,21 @@ const productSeed = [
              "price": 250.00,
              "category": "Featured",
              "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
-         }
+         },
+         {
+            "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdb73de11/images/a_107/167758C_A_107X1.jpg?sw=964",
+            "name": "Pride Chuck Taylor All Star",
+            "price": 65.00,
+            "category": "Featured",
+            "description": "A celebration of inclusivity and Pride, in all its forms and colors, inspired by the many flags raised by the LGBTQIA+ community. The “More Color, More Pride” flag expands to include brown and black stripes — representing the power of diversity and inclusion. With the Chuck Taylor All Star, a black-and-white classic is made over with brilliant, bright color."
+        },
+        {
+            "image": "https://www.balenciaga.com/66/45/45474478cq_14_a_f.jpg",
+            "name": "Wheel Small Backpack",
+            "price": 950.00,
+            "category": "Featured",
+            "description": "This small nylon bag that was made in Italy by the ever famous Balenciaga brand comes with adjustable shoulder straps."
+        }
      ]
 
 db.Products.deleteMany({})

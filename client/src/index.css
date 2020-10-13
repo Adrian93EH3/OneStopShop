@@ -162,7 +162,6 @@ footer {
   font-size: 1.4rem;
   font-family: "poppins-regular", sans-serif;
   background-color: black;
-  margin-top: 20px;
 }
 
 footer .row {
@@ -197,6 +196,10 @@ footer .copyright span::after {
 }
 footer .copyright span:last-child::after {
   display: none;
+}
+
+.footer {
+  margin-top:20px;
 }
 
 /**
