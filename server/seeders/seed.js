@@ -344,62 +344,62 @@ const productSeed = [
         },
         {
             "image": "https://www.balenciaga.com/66/11/11929538wq_12_a_f.jpg",
-            "name": "Knife Shark 110mm Over-The-Knee",
+            "name": "Knife Shark 110mm Boot Over-The-Knee",
             "price": 2250.00,
             "category": "Shoes",
             "description": "These over-the-knee boots are made out of calfskin, and has a 100mm arch with a thin heel and a elongated pointy toe."
         },
         {
-             "image": "burberrybp.png",
+             "image": "https://img.ssensemedia.com/image/upload/b_white/c_scale,h_820/f_auto,dpr_1.0/202376M166012_1.jpg",
              "name": "Burberry Checkered Bag",
              "price": 990.00,
              "category": "Featured",
              "description": "This is a luxurious backpack made by none other than Burberry."
          },
          {
-             "image": "PC11.png",
+             "image": "https://www.cyberpowerpc.com/images/cs/p400a/CS-220-220_400.png",
              "name": "Gamer Xtreme 1000",
              "price": 1165.00,
              "category": "Featured",
              "description": "Mid-range gaming PC built with an Intel i5-10400 processor, a GTX 1650 SUPER 4GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more"
          },
          {
-             "image": "jordan.png",
+             "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/97223f0a-dfde-4ca6-9ddd-c2436f154ff0/jordan-zoom-92-mens-shoe-HGMsj5.jpg",
              "name": "Jordan Zoom '92",
              "price": 150.00,
              "category": "Featured",
              "description": "A nod to '90s basketball shoes, the Jordan Zoom '92 focuses on comfort while tapping into the irreverent spirit of that era's designs. A stretchy fit sleeve and underfoot cushioning offer a comfortable fit. '90s-inspired details give the shoe its retro flavor."
          },
          {
-             "image": "PC5.png",
+             "image": "https://www.cyberpowerpc.com/images/cs/PCO11XL/CS-193-107_400.png",
              "name": "Gamer Infinity XLC",
              "price": 2535.00,
              "category": "Featured",
              "description": "CPU: Intel® Core™ Processor i9-10900K 10/20 3.70GHz [Turbo 5.2GHz] 20MB Cache LGA1200 CPU / Processor Cooling Fan: CyberpowerPC MasterLiquid Lite 240mm ARGB CPU Liquid Cooler with Dual Chamber Pump & Copper Cold Plate (Intel) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB) Video Card: GeForce RTX™ 3080 10GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 1,000 Watts - Standard 80 Plus Gold Power Supply Primary Hard Drive: 1TB WD Blue SN550 M.2 NVME SSD + 3TB SATA III Hard Drive Combo (Combo Drive)"
          },
          {
-             "image": "PC6.png",
+             "image": "https://www.cyberpowerpc.com/images/cs/PCO11AIR/CS-193-103.png",
              "name": "Pro Designer 100",
              "price": 1859.00,
              "category": "Featured",
              "description": "High-end gaming PC with an Intel i7-10700 processor, a GeForce RTX 2070 SUPER 8GB GPU, 32GB of DDR4 RAM, Windows 10 Home, and much more." 
          },
          {
-             "image": "NMbluetongue.png",
+             "image": "https://images.neimanmarcus.com/ca/7/product_assets/N/5/B/M/K/NMN5BMK_mz.jpg",
              "name": "Giuseppe Zanotti Men's Velvet & Patent Leather Mid-Top Sneakers",
              "price": 710.00,
              "category": "Featured",
              "description": "This mid-top sneaker is made out of velvet and patent metallic leather, with a round toe and duel zips on either side of the laces, and a rubber outsoul."
          },
          {
-             "image": "PC1.png",
+             "image": "https://www.cyberpowerpc.com/images/cs/view51/CS-157-548_400.png",
              "name": "AMD Threadripper Ultimate",
              "price": 7349.00,
              "category": "Featured",
              "description": "CPU: AMD Ryzen™ Threadripper 3990X 2.9GHz [4.3GHz Turbo] 64Core 128Threads 288MB Cache 280W Processor CPU / Processor Cooling Fan: Asetek 570LC 120mm (Fatboy) Liquid CPU Cooling System w/ Copper Cold Plate (Single Standard 120MM Fan) Motherboard: ASRock TRX40 Creator ATX w/ WiFi 6, RGB, Dual LAN, 4 PCIe x16, 8 SATA3, 3 M.2 SATA/PCIe RAM / System Memory: 32GB (8GBx4) DDR4/3000MHz Quad Channel Memory (ADATA XPG Z1) Video Card: GeForce RTX™ 3090 24GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 1250 Watts - Enermax EDT1250EWT MaxTytan Series 80 PLUS Titanium certified Full Modular Active PFC Power Supply Primary Hard Drive: 1TB WD Blue SN550 M.2 NVME SSD + 4TB SATA III Hard Drive Combo (Combo Drive)"
          },
          {
-             "image": "coachbp.png",
+             "image": "https://img1.cohimg.net/is/image/Coach/89931_qbcah_a0?fmt=jpg&wid=680&hei=885&bgc=f0f0f0&fit=vfit&qlt=75",
              "name": "Coach Large Ranger Backpack",
              "price": 250.00,
              "category": "Featured",
