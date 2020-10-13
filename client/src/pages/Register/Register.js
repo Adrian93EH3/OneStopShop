@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
@@ -50,6 +51,7 @@ class Register extends Component {
             <RegistrationForm onSubmit={this.handleSubmit} />
           </div>
         </div>
+      <Row className="spacing"></Row>
       </div>
     );
   }

@@ -12,7 +12,7 @@ import NotFound from "../../pages/NotFound/NotFound";
 import Navigation from "../../components/Navigation/Navigation";
 import Backpack from "../../pages/Backpack/backpack";
 import Shoe from "../../pages/Shoe/shoe";
-import Computer from "../../pages/Computer/computer";
+import Tech from "../../pages/Tech/Tech";
 import Clothes from "../../pages/Clothes/clothing";
 import Cart from "../../pages/Cart/cart";
 import Row from "react-bootstrap/Row";
@@ -152,7 +152,7 @@ class App extends Component {
                       exact
                       path="/tech"
                       render={(props) => (
-                        <Computer
+                        <Tech
                           cart={this.state.cart}
                           cartUpdate={this.addToCart}
                         />

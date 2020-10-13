@@ -5,6 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
 import API from "../../lib/API";
+import Row from "react-bootstrap/Row";
 import {
   bounce,
   fadeIn,
@@ -46,7 +47,7 @@ const Animate = [
   zoomIn,
 ];
 
-class Computer extends React.Component {
+class Tech extends React.Component {
   constructor() {
     super();
 
@@ -55,7 +56,7 @@ class Computer extends React.Component {
 
     this.state = {
       show: null,
-      computerData: [],
+      techData: [],
     };
   }
 
@@ -70,12 +71,12 @@ class Computer extends React.Component {
   componentDidMount() {
     API.Products.getAllProducts().then((data) => {
       console.log(data);
-      const computerData = data.data.filter((val) => {
+      const techData = data.data.filter((val) => {
         console.log(val.category);
         return val.category === "Tech";
       });
-      console.log(computerData);
-      this.setState({ computerData: computerData });
+      console.log(techData);
+      this.setState({ techData: techData });
     });
   }
 
@@ -83,7 +84,7 @@ class Computer extends React.Component {
     return (
       <div>
         <CardDeck>
-          {this.state.computerData.map((item) => {
+          {this.state.techData.map((item) => {
             let randomIndex = Math.floor(Math.random() * Animate.length);
             let AnimateDiv = styled.div`
               animation: 2s ${keyframes`${Animate[randomIndex]}`};
@@ -138,9 +139,10 @@ class Computer extends React.Component {
             );
           })}
         </CardDeck>
+        <Row className="spacing2"></Row>
       </div>
     );
   }
 }
 
-export default Computer;
+export default Tech;

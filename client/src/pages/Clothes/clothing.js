@@ -5,6 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
 import API from "../../lib/API";
+import Row from "react-bootstrap/Row";
 import {
   bounce,
   fadeIn,
@@ -138,6 +139,7 @@ class Clothing extends React.Component {
             );
           })}
         </CardDeck>
+        <Row className="spacing2"></Row>
       </div>
     );
   }

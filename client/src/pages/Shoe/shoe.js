@@ -25,6 +25,7 @@ import {
   wobble,
   zoomIn,
 } from "react-animations";
+import { Row } from "react-bootstrap";
 const Animate = [
   bounce,
   fadeIn,
@@ -138,6 +139,7 @@ class Shoe extends React.Component {
             );
           })}
         </CardDeck>
+        <Row className="spacing2"></Row>
       </div>
     );
   }
