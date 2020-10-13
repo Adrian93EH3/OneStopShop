@@ -84,7 +84,7 @@ class RegistrationForm extends Component {
                 <input
                   className='form-control'
                   id='signUp-code'
-                  type='code'
+                  type='password'
                   name='signUpCode'
                   placeholder='sign up code'
                   value={signUpCode}
