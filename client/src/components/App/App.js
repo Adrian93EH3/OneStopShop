@@ -67,8 +67,8 @@ class App extends Component {
       }
 
       return [
-        ...currentCart.cart.slice(0, indexOfItemToRemove),
-        ...currentCart.cart.slice(indexOfItemToRemove + 1),
+        ...currentCart.cart.splice(indexOfItemToRemove, 1),
+        // ...currentCart.cart.splice(indexOfItemToRemove + 1),
       ];
     });
   };
