@@ -7,11 +7,12 @@ import AuthContext from "../../contexts/AuthContext";
 import Card from "react-bootstrap/Card";
 import { Formik } from "formik";
 import * as yup from "yup";
+import API from "../../lib/API";
 
 const schema = yup.object({
-  itemName: yup.string().required(),
-  itemDescription: yup.string().required(),
-  salePrice: yup.string().required(),
+  name: yup.string().required(),
+  description: yup.string().required(),
+  price: yup.string().required(),
   image: yup.string().required(),
 });
 
@@ -24,9 +25,9 @@ function FormExample() {
       onSubmit={console.log}
       initialValues={{
         category: "",
-        itemName: "",
-        itemDescription: "",
-        salePrice: "",
+        name: "",
+        description: "",
+        price: "",
         image: ""
       }}
     >
@@ -54,13 +55,13 @@ function FormExample() {
               <Form.Label>Item Name</Form.Label>
               <Form.Control
                 type="text"
-                name="itemName"
-                value={values.itemName}
+                name="name"
+                value={values.name}
                 onChange={handleChange}
-                isInvalid={!!errors.itemName}
+                isInvalid={!!errors.name}
               />
               <Form.Control.Feedback type="invalid" tooltip>
-                {errors.itemName}
+                {errors.name}
               </Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
@@ -71,13 +72,13 @@ function FormExample() {
               <Form.Control
                 type="text"
                 as="textarea"
-                name="itemDescription"
-                value={values.itemDescription}
+                name="description"
+                value={values.description}
                 onChange={handleChange}
-                isInvalid={!!errors.itemDescription}
+                isInvalid={!!errors.description}
               />
               <Form.Control.Feedback type="invalid" tooltip>
-                {errors.itemDescription}
+                {errors.description}
               </Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
@@ -91,15 +92,15 @@ function FormExample() {
                 </InputGroup.Prepend>
                 <Form.Control
                   type="text"
-                  placeholder="salePrice"
+                  placeholder="Price"
                   aria-describedby="inputGroupPrepend"
-                  name="salePrice"
-                  value={values.salePrice}
+                  name="price"
+                  value={values.price}
                   onChange={handleChange}
-                  isInvalid={!!errors.salePrice}
+                  isInvalid={!!errors.price}
                 />
                 <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.salePrice}
+                  {errors.price}
                 </Form.Control.Feedback>
               </InputGroup>
             </Form.Group>
@@ -107,16 +108,16 @@ function FormExample() {
 
           <Form.Group>
           <Form.Label>Image</Form.Label>
-            <Form.File
-              className="position-relative"
-              required
-              name="image"
-              onChange={handleChange}
-              isInvalid={!!errors.image}
-              feedback={errors.image}
-              id="validationFormik107"
-              feedbackTooltip
-            />
+            <Form.Control
+                type="text"
+                name="image"
+                value={values.image}
+                onChange={handleChange}
+                isInvalid={!!errors.image}
+              />
+              <Form.Control.Feedback type="invalid" tooltip>
+                  {errors.image}
+                </Form.Control.Feedback>
           </Form.Group>
           <Button type="submit">Submit form</Button>
         </Form>
