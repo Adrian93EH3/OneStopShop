@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
 
 const Shop = (props) => {
   const cartTotal = props.cart.reduce(
@@ -43,6 +44,7 @@ const Shop = (props) => {
         <Button className="rickRoll mx-2 mb-2" type="submit" href="https://youtu.be/ub82Xb1C8os">Check Out</Button>
         </div>
       </Card>
+      <Row className="spacing3"></Row>
     </div>
   );
 };
