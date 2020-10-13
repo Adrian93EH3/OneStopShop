@@ -24,7 +24,7 @@ const Shop = (props) => {
         <div>
           <Image src={`../images/${item.image}`} alt={item.name} thumbnail />{" "}
           {`${item.name}`} ({amountOfItems(item._id)} x ${item.price})<br/>
-          <Button type="submit" onClick={() => props.removeFromCart(item)}>Remove</Button>
+          {/* <Button type="submit" onClick={() => props.removeFromCart(item)}>Remove</Button> */}
         </div>
       </div>
     ));

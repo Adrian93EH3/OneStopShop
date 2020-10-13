@@ -86,25 +86,25 @@ class Home extends Component {
     return (
       <>
         <Col className="mx-auto" sm={4}>
-          <Carousel style={{ width: "23rem", height: "25rem" }}>
+          <Carousel style={{ width: "23rem", height: "25rem" }} bg-light>
             <Carousel.Item interval={1000}>
               <img
                 className="d-block w-100"
-                src={"../images/leather.png"}
+                src={"https://www.balenciaga.com/66/11/11929538wq_12_a_f.jpg"}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item interval={500}>
               <img
                 className="d-block w-100"
-                src={"../images/AF1.png"}
-                alt="Third slide"
+                src={"https://www.cyberpowerpc.com/images/cs/p418x/cs-450-140_400.png"}
+                alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={"../images/burberrybp.png"}
+                src={"https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vans-Barbed-Floral-White-Hoodie-_167121-front-CA.jpg"}
                 alt="Third slide"
               />
             </Carousel.Item>
@@ -125,7 +125,7 @@ class Home extends Component {
                       style={{ width: "15rem", height: "25rem" }}
                       onClick={() => this.handleShow(item._id)}
                     >
-                      <Card.Img variant="top" src={`../images/${item.image}`} />
+                      <Card.Img variant="top" src={item.image} />
                       <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
                         <Card.Title>${item.price}</Card.Title>
@@ -139,7 +139,7 @@ class Home extends Component {
                         <Modal.Title>
                           {" "}
                           <img
-                            src={`../images/${item.image}`}
+                            src={item.image}
                             alt={item.name}
                           />
                         </Modal.Title>
