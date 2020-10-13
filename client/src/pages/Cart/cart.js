@@ -25,7 +25,7 @@ const Shop = (props) => {
         <div>
           <Image src={item.image} alt={item.name} thumbnail />{" "}
           {`${item.name}`} ({amountOfItems(item._id)} x ${item.price})<br/>
-          {/* <Button type="submit" onClick={() => props.removeFromCart(item)}>Remove</Button> */}
+          <Button type="submit" onClick={() => props.removeFromCart(item)}>Remove</Button>
         </div>
       </div>
     ));
@@ -35,7 +35,7 @@ const Shop = (props) => {
         <h1>Cart</h1>
       <Card className="align-items-left">
         <ListGroup>
-          {newCart == 0 ? (<ListGroup.Item><h1 style={{textAlign: "center"}}>Cart is Empty</h1></ListGroup.Item>) : (<ListGroup.Item>{listItemsInCart()}</ListGroup.Item>)}
+          {newCart.length === 0 ? (<ListGroup.Item><h1 style={{textAlign: "center"}}>Cart is Empty</h1></ListGroup.Item>) : (<ListGroup.Item>{listItemsInCart()}</ListGroup.Item>)}
         </ListGroup>
         <Card.Title>Total: ${cartTotal}</Card.Title>
         <div>
