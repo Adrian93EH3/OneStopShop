@@ -10,12 +10,12 @@ class Register extends Component {
     error: ""
   }
 
-  handleSubmit = (email, password, confirm) => {
+  handleSubmit = (email, password, confirm, signUpCode) => {
     if (password !== confirm) {
       return this.setState({ error: "Passwords do not match." });
     }
 
-    API.Users.create(email, password)
+    API.Users.create(email, password, signUpCode)
       .then(response => response.data)
       .then(() => {
         this.setState({ redirectToReferrer: true, error: "" });

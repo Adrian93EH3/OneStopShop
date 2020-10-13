@@ -72,7 +72,7 @@ class Computer extends React.Component {
       console.log(data);
       const computerData = data.data.filter((val) => {
         console.log(val.category);
-        return val.category === "Computer";
+        return val.category === "Tech";
       });
       console.log(computerData);
       this.setState({ computerData: computerData });

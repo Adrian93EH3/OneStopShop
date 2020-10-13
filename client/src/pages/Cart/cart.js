@@ -38,7 +38,7 @@ const Shop = (props) => {
         </ListGroup>
         <Card.Title>Total: ${cartTotal}</Card.Title>
         <div>
-        <Button className="mx-2 mb-2" type="submit" onClick={() => props.cart.setState([])}>Empty Cart</Button>
+        <Button className="mx-2 mb-2" type="submit" onClick={() => {props.cart.length=0; window.location.reload()}}>Empty Cart</Button>
         
         <Button className="rickRoll mx-2 mb-2" type="submit" href="https://youtu.be/ub82Xb1C8os">Check Out</Button>
         </div>

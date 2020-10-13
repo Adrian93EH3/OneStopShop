@@ -16,7 +16,13 @@ productsController.get('/', (req, res) => {
 })
 
 productsController.post('/', (req, res) => {
-    db.Products.create(req.body).then(data => {
+    db.Products.create({
+        category: req.body.category,
+        name: req.body.name,
+        price: req.body.price,
+        image: req.body.image,
+        description: req.body.description
+    }).then(data => {
         res.json(data)
     }).catch(err => {
         console.log(err);
