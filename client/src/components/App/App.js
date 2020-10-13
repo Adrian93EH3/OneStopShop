@@ -21,7 +21,6 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
 import Footer from "../Footer/footer";
 
-
 import "./App.css";
 
 class App extends Component {
@@ -49,14 +48,30 @@ class App extends Component {
         onLogin: this.handleLogin,
         onLogout: this.handleLogout,
       },
-      cart:[],
-  
+      cart: [],
     };
   }
 
+  addToCart = (item) =>
+    this.setState((currentCart) => ({ cart: [...currentCart.cart, item] }));
 
-   addToCart = (item) => this.setState(currentCart => ({cart: [...currentCart.cart, item]}));
+  removeFromCart = (item) => {
+    this.setState((currentCart) => {
+      const indexOfItemToRemove = currentCart.cart.findIndex(
+        (cartItem) => cartItem._id === item._id
+      );
+      console.log(indexOfItemToRemove)
 
+      if (indexOfItemToRemove === -1) {
+        return currentCart.cart;
+      }
+
+      return [
+        ...currentCart.cart.slice(0, indexOfItemToRemove),
+        ...currentCart.cart.slice(indexOfItemToRemove + 1),
+      ];
+    });
+  };
 
   componentDidMount() {
     const { authToken } = this.state.auth;
@@ -74,46 +89,101 @@ class App extends Component {
     return (
       <AuthContext.Provider value={this.state.auth}>
         <div className="App">
-          <Navigation cart ={this.state.cart}/>
+          <Navigation cart={this.state.cart} />
           <section id="intro">
-          <div className="intro-overlay"></div>
-          <div className="container-fluid">
-            <Row >
-              <Col sm={2}>
-                <Card style={{ width: "12rem" }} id="navcolumn">
-                  <Card.Header>Featured</Card.Header>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>
-                      <Link to="/backpacks">Backpacks</Link>
-                    </ListGroup.Item>
-                    <ListGroup.Item>
-                      <Link to="/shoes">Shoes</Link>
-                    </ListGroup.Item>
-                    <ListGroup.Item>
-                      <Link to="/tech">Tech</Link>
-                    </ListGroup.Item>
-                    <ListGroup.Item>
-                      <Link to="/clothes">Clothes</Link>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card>
-              </Col>
-              <Col sm={10} className="mx-auto">
-                <Switch>
-                  <Route exact path="/home" component={Home} />
-                  <Route path="/login" component={Login} />
-                  <Route path="/register" component={Register} />
-                  <PrivateRoute path="/admin" component={Admin} />
-                  <Route exact path="/backpacks" render={props=><Backpack cart={this.state.cart} cartUpdate={this.addToCart}/>} />
-                  <Route exact path="/shoes" component={Shoe} />
-                  <Route exact path="/tech" component={Computer} />
-                  <Route exact path="/clothes" component={Clothes} />
-                  <Route exact path="/cart" render={props=><Cart cart={this.state.cart} cartUpdate={this.addToCart}/>} />
-                  <Route component={NotFound} />
-                </Switch>
-              </Col>
-            </Row>
-          </div>
+            <div className="intro-overlay"></div>
+            <div className="container-fluid">
+              <Row>
+                <Col sm={2}>
+                  <Card style={{ width: "12rem" }} id="navcolumn">
+                    <Card.Header>Featured</Card.Header>
+                    <ListGroup variant="flush">
+                      <ListGroup.Item>
+                        <Link to="/backpacks">Backpacks</Link>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <Link to="/shoes">Shoes</Link>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <Link to="/tech">Tech</Link>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <Link to="/clothes">Clothes</Link>
+                      </ListGroup.Item>
+                    </ListGroup>
+                  </Card>
+                </Col>
+                <Col sm={10} className="mx-auto">
+                  <Switch>
+                    <Route
+                      exact
+                      path="/home"
+                      render={(props) => (
+                        <Home
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                        />
+                      )}
+                    />
+                    <Route path="/login" component={Login} />
+                    <Route path="/register" component={Register} />
+                    <PrivateRoute path="/admin" component={Admin} />
+                    <Route
+                      exact
+                      path="/backpacks"
+                      render={(props) => (
+                        <Backpack
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/shoes"
+                      render={(props) => (
+                        <Shoe
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/tech"
+                      render={(props) => (
+                        <Computer
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/clothes"
+                      render={(props) => (
+                        <Clothes
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/cart"
+                      render={(props) => (
+                        <Cart
+                          cart={this.state.cart}
+                          cartUpdate={this.addToCart}
+                          removeFromCart={this.removeFromCart}
+                        />
+                      )}
+                    />
+                    <Route component={NotFound} />
+                  </Switch>
+                </Col>
+              </Row>
+            </div>
           </section>
           <Footer />
         </div>

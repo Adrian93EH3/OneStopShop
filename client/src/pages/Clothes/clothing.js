@@ -47,15 +47,15 @@ const Animate = [
 ];
 
 class Clothing extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor() {
+    super();
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
       show: null,
-      clothingData: []
+      clothingData: [],
     };
   }
 
@@ -68,16 +68,15 @@ class Clothing extends React.Component {
   }
 
   componentDidMount() {
-    API.Products.getAllProducts()
-      .then(data => {
-        console.log(data)
-        const clothingData = data.data.filter(val => {
-          console.log(val.category)
-          return val.category === "Clothing"
-        })
-        console.log(clothingData)
-        this.setState({ clothingData: clothingData });
-      })
+    API.Products.getAllProducts().then((data) => {
+      console.log(data);
+      const clothingData = data.data.filter((val) => {
+        console.log(val.category);
+        return val.category === "Clothing";
+      });
+      console.log(clothingData);
+      this.setState({ clothingData: clothingData });
+    });
   }
 
   render() {
@@ -117,6 +116,16 @@ class Clothing extends React.Component {
                     ${item.price}
                   </Modal.Body>
                   <Modal.Footer>
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      onClick={() => {
+                        this.props.cartUpdate(item);
+                        this.handleClose(item._id);
+                      }}
+                    >
+                      Add to Cart
+                    </button>
                     <Button
                       variant="secondary"
                       onClick={() => this.handleClose(item._id)}

@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import styled, { keyframes } from "styled-components";
-import API from '../../lib/API';
+import API from "../../lib/API";
 import {
   bounce,
   fadeIn,
@@ -47,15 +47,15 @@ const Animate = [
 ];
 
 class Computer extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor() {
+    super();
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
       show: null,
-      computerData: []
+      computerData: [],
     };
   }
 
@@ -68,16 +68,15 @@ class Computer extends React.Component {
   }
 
   componentDidMount() {
-    API.Products.getAllProducts()
-      .then(data => {
-        console.log(data)
-        const computerData = data.data.filter(val => {
-          console.log(val.category)
-          return val.category === "Computer"
-        })
-        console.log(computerData)
-        this.setState({ computerData: computerData });
-      })
+    API.Products.getAllProducts().then((data) => {
+      console.log(data);
+      const computerData = data.data.filter((val) => {
+        console.log(val.category);
+        return val.category === "Computer";
+      });
+      console.log(computerData);
+      this.setState({ computerData: computerData });
+    });
   }
 
   render() {
@@ -91,7 +90,10 @@ class Computer extends React.Component {
             `;
             return (
               <AnimateDiv key={item._id}>
-                <Card style={{ width: "15rem", height: "25rem" }} onClick={() => this.handleShow(item._id)}>
+                <Card
+                  style={{ width: "15rem", height: "25rem" }}
+                  onClick={() => this.handleShow(item._id)}
+                >
                   <Card.Img variant="top" src={`../images/${item.image}`} />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
@@ -99,32 +101,39 @@ class Computer extends React.Component {
                   </Card.Body>
                 </Card>
                 <Modal
-                      show={this.state.show === item._id}
-                      onHide={() => this.handleClose(item._id)}
+                  show={this.state.show === item._id}
+                  onHide={() => this.handleClose(item._id)}
+                >
+                  <Modal.Header closeButton>
+                    <Modal.Title>
+                      {" "}
+                      <img src={`../images/${item.image}`} alt={item.name} />
+                    </Modal.Title>
+                    <Modal.Title>{item.name}</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>{item.description}</Modal.Body>
+                  <Modal.Body style={{ fontWeight: "bold" }}>
+                    ${item.price}
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      onClick={() => {
+                        this.props.cartUpdate(item);
+                        this.handleClose(item._id);
+                      }}
                     >
-                      <Modal.Header closeButton>
-                        <Modal.Title>
-                          {" "}
-                          <img
-                            src={`../images/${item.image}`}
-                            alt={item.name}
-                          />
-                        </Modal.Title>
-                        <Modal.Title>{item.name}</Modal.Title>
-                      </Modal.Header>
-                      <Modal.Body>{item.description}</Modal.Body>
-                      <Modal.Body style={{ fontWeight: "bold" }}>
-                        ${item.price}
-                      </Modal.Body>
-                      <Modal.Footer>
-                        <Button
-                          variant="secondary"
-                          onClick={() => this.handleClose(item._id)}
-                        >
-                          Close
-                        </Button>
-                      </Modal.Footer>
-                    </Modal>
+                      Add to Cart
+                    </button>
+                    <Button
+                      variant="secondary"
+                      onClick={() => this.handleClose(item._id)}
+                    >
+                      Close
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
               </AnimateDiv>
             );
           })}
