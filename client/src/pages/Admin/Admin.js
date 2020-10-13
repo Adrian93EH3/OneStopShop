@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -7,6 +7,8 @@ import AuthContext from "../../contexts/AuthContext";
 import Card from "react-bootstrap/Card";
 import { Formik } from "formik";
 import * as yup from "yup";
+import { Redirect } from "react-router-dom";
+
 import API from "../../lib/API";
 
 const schema = yup.object({
@@ -17,18 +19,39 @@ const schema = yup.object({
 });
 
 function FormExample() {
+  const [redirectToReferrer, setRedirectToReferrer] = useState(false)
+  const [errorOccured, setErrorOccured] = useState(false);
+  console.log(redirectToReferrer);
+  if (redirectToReferrer) {
+    return <Redirect to="/home" />;
+  }
+
   return (
     <Card>
       <div id="formCard"></div>
+      {errorOccured ? <div>Error, please try again</div> : null}
       <Formik
         validationSchema={schema}
-        onSubmit={console.log}
+        onSubmit={
+          (values) => {
+            console.log(redirectToReferrer);
+            API.Products.createProduct(values).then((data) => {
+              console.log("returned data", data);
+              if(data.data.errors) {
+                setErrorOccured(true);
+              }else{
+                 setRedirectToReferrer(true);
+              }
+            })
+          }
+
+        }
         initialValues={{
           category: "",
           name: "",
           description: "",
           price: "",
-          image: ""
+          image: "",
         }}
       >
         {({ handleSubmit, handleChange, values, errors }) => (
@@ -40,12 +63,13 @@ function FormExample() {
                   as="select"
                   name="category"
                   value={values.category}
-                  custom
+                  onChange={handleChange}
                 >
-                  <option>Backpacks</option>
+                  <option>choose an option</option>
+                  <option>Backpack</option>
                   <option>Shoes</option>
                   <option>Tech</option>
-                  <option>Clothes</option>
+                  <option>Clothing</option>
                 </Form.Control>
               </Form.Group>
             </Form.Row>
@@ -127,7 +151,7 @@ function FormExample() {
   );
 }
 
-class Secret extends Component {
+class Admin extends Component {
   static contextType = AuthContext;
 
   render() {
@@ -139,4 +163,4 @@ class Secret extends Component {
   }
 }
 
-export default Secret;
+export default Admin;
