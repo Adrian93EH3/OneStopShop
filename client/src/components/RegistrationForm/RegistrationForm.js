@@ -18,14 +18,14 @@ class RegistrationForm extends Component {
   }
 
   handleSubmit = event => {
-    const { email, password, passwordConfirm } = this.state;
+    const { email, password, passwordConfirm, signUpCode } = this.state;
 
-    this.props.onSubmit(email, password, passwordConfirm);
+    this.props.onSubmit(email, password, passwordConfirm, signUpCode);
     event.preventDefault();
   }
 
   render() {
-    const { email, password, passwordConfirm } = this.state;
+    const { email, password, passwordConfirm, signUpCode } = this.state;
 
     return (
       <div className='LoginForm'>
@@ -73,6 +73,21 @@ class RegistrationForm extends Component {
                   name='passwordConfirm'
                   placeholder='password (again)'
                   value={passwordConfirm}
+                  onChange={this.handleInputChange}
+                />
+              </div>
+
+              <div className='input-group mb-3'>
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><Octicon icon={Key} /></span>
+                </div>
+                <input
+                  className='form-control'
+                  id='signUp-code'
+                  type='code'
+                  name='signUpCode'
+                  placeholder='sign up code'
+                  value={signUpCode}
                   onChange={this.handleInputChange}
                 />
               </div>

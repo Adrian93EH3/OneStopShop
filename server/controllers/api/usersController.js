@@ -1,5 +1,5 @@
 const usersController = require('express').Router();
-
+require('dotenv').config()
 const db = require('../../models');
 const { JWTVerifier } = require('../../lib/passport');
 const jwt = require('jsonwebtoken');
@@ -7,10 +7,14 @@ const jwt = require('jsonwebtoken');
 // Accessed at /api/users
 usersController.post('/', (req, res) => {
   const { email, password } = req.body;
-
-  db.Users.create({ email, password })
-    .then(user => res.json(user))
-    .catch(err => res.json(err));
+  console.log(process.env.SIGNUP_CODE, req.body.signUpCode)
+  if(process.env.SIGNUP_CODE !== req.body.signUpCode){
+    res.send("Incorrect Admin Key")
+  } else {
+    db.Users.create({ email, password })
+      .then(user => res.json(user))
+      .catch(err => res.json(err));
+  }
 });
 
 // Accessed at /api/users/me
