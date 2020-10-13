@@ -10,6 +10,7 @@ import * as yup from "yup";
 import { Redirect } from "react-router-dom";
 
 import API from "../../lib/API";
+import { Row } from "react-bootstrap";
 
 const schema = yup.object({
   name: yup.string().required(),
@@ -27,6 +28,7 @@ function FormExample() {
   }
 
   return (
+    <div>
     <Card>
       <div id="formCard"></div>
       {errorOccured ? <div>Error, please try again</div> : null}
@@ -66,7 +68,7 @@ function FormExample() {
                   onChange={handleChange}
                 >
                   <option>choose an option</option>
-                  <option>Backpack</option>
+                  <option>Backpacks</option>
                   <option>Shoes</option>
                   <option>Tech</option>
                   <option>Clothing</option>
@@ -148,6 +150,8 @@ function FormExample() {
         )}
       </Formik>
     </Card>
+    <Row className="spacing"></Row>
+    </div>
   );
 }
 

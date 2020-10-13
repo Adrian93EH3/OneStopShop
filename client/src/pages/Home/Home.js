@@ -174,6 +174,7 @@ class Home extends Component {
             </CardDeck>
           </Col>
         </Row>
+        <Row className="spacing2"></Row>
       </>
     );
   }
