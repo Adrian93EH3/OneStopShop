@@ -95,7 +95,7 @@ class Backpack extends React.Component {
                   style={{ width: "15rem", height: "25rem" }}
                   onClick={() => this.handleShow(item._id)}
                 >
-                  <Card.Img variant="top" src={`../images/${item.image}`} />
+                  <Card.Img variant="top" src={item.image} />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Title>${item.price}</Card.Title>
@@ -108,7 +108,7 @@ class Backpack extends React.Component {
                   <Modal.Header closeButton>
                     <Modal.Title>
                       {" "}
-                      <img src={`../images/${item.image}`} alt={item.name} />
+                      <img src={item.image} alt={item.name} />
                     </Modal.Title>
                     <Modal.Title>{item.name}</Modal.Title>
                   </Modal.Header>
