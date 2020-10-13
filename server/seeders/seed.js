@@ -182,168 +182,168 @@ const productSeed = [
             "description": "Be loud and proud about your insecurities in the Loser purple, yellow, and blue tie dye hoodie from JV by Jac Vanek! This sweatshirt adds a pretty pastel touch to any look with swirling purple, yellow, and blue tones, and rainbow-colored text reading Loser at the chest for a look that's sure to have people saying, no you're not."
         },
         {
-            "image": "PC1.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/view51/CS-157-548_400.png",
             "name": "AMD Threadripper Ultimate",
             "price": 7349.00,
             "category": "Tech",
             "description": "CPU: AMD Ryzen™ Threadripper 3990X 2.9GHz [4.3GHz Turbo] 64Core 128Threads 288MB Cache 280W Processor CPU / Processor Cooling Fan: Asetek 570LC 120mm (Fatboy) Liquid CPU Cooling System w/ Copper Cold Plate (Single Standard 120MM Fan) Motherboard: ASRock TRX40 Creator ATX w/ WiFi 6, RGB, Dual LAN, 4 PCIe x16, 8 SATA3, 3 M.2 SATA/PCIe RAM / System Memory: 32GB (8GBx4) DDR4/3000MHz Quad Channel Memory (ADATA XPG Z1) Video Card: GeForce RTX™ 3090 24GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 1250 Watts - Enermax EDT1250EWT MaxTytan Series 80 PLUS Titanium certified Full Modular Active PFC Power Supply Primary Hard Drive: 1TB WD Blue SN550 M.2 NVME SSD + 4TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC2.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/PCO11LIRIK/CS-193-105_400.png",
             "name": "Lirik 200",
             "price": 5455.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i9-10900X Ten-Core 3.7GHz (Turbo 4.7GHz) 19.25MB Intel Smart Cache LGA2066 (Quad Channels) CPU / Processor Cooling Fan: CyberpowerPC MasterLiquid Lite 360mm ARGB CPU Liquid Cooler with Dual Chamber Pump & Copper Cold Plate (Intel) Motherboard: GIGABYTE GA-X299 UD4 PRO ATX w/ RGB, Digital LED Support, USB 3.1, 5 PCIe x16, 8 SATA3, 2 M.2 SATA/PCIe [Intel Optane Ready] RAM / System Memory: 64GB (16GBx4) DDR4/3000MHz Quad Channel Memory (ADATA XPG Z1) Video Card: GeForce RTX™ 3090 24GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 850 Watts - Corsair RM Series RM850 80 PLUS GOLD Certified Fully Modular Ultra Quiet Power Supply Primary Hard Drive: 2TB Intel® 665P SERIES PCIe NVMe M.2 SSD - Seq R/W: Up to 2000/2000 MB/s, Rnd R/W up to 250/250k (Single Drive) Secondary Hard Drive: 3TB (3TBx1) SATA-III 6.0Gb/s 64MB Cache 5400RPM HDD (Single Drive)"
         },
         {
-            "image": "PC3.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/EnthooEliteXT/CS-220-112_400.png",
             "name": "Luxe 4K",
             "price": 5039.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i9-10980XE Eighteen-Core 3.0GHz (Turbo 4.8GHz) 24.75MB Intel Smart Cache LGA2066 (Quad Channels) Venom Boost Fast And Efficient Factory Overclocking: Ultimate OC (Ultimate Overclock 30% or more) CPU / Processor Cooling Fan: BitsPower CP HydroFluxe Custom HardTube Water Cooling Kit 360MM RAD/D5PUMP/Intel CPU Block (Clear) (3 x Standard 120MM Fans) Coolant for Cyberpower Xtreme Hydro Water Cooling Kits: Thermaltake P1000 Pastel Coolant - Red Motherboard: GIGABYTE GA-X299 UD4 PRO ATX w/ RGB, Digital LED Support, USB 3.1, 5 PCIe x16, 8 SATA3, 2 M.2 SATA/PCIe [Intel Optane Ready] RAM / System Memory: 64GB (16GBx4) DDR4/3000MHz Quad Channel Memory (ADATA XPG Z1) Video Card: GeForce® RTX 2080 SUPER™ 8GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 1250 Watts - Enermax EDT1250EWT MaxTytan Series 80 PLUS Titanium certified Full Modular Active PFC Power Supply Primary Hard Drive: 1TB SAMSUNG 970 PRO PCIe NVMe M.2 SSD - Seq R/W: Up to 3500/2700 MB/s, Rnd R/W up to 500/500k (Single Drive) Secondary Hard Drive: 4TB (4TBx1) SATA-III 6.0Gb/s 64MB Cache 5400RPM HDD (Single Drive)"
         },
         {
-            "image": "PC4.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/EnthooEliteXT/CS-220-112_400.png",
             "name": "Hyper Liquid Alloy Black Mamba",
             "price": 4965.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i9-10980XE Eighteen-Core 3.0GHz (Turbo 4.8GHz) 24.75MB Intel Smart Cache LGA2066 (Quad Channels) Venom Boost Fast And Efficient Factory Overclocking: Ultimate OC (Ultimate Overclock 30% or more) CPU / Processor Cooling Fan: BitsPower CP HydroFluxe Custom HardTube Water Cooling Kit 360MM RAD/D5PUMP/Intel CPU Block (Clear) (3 x Standard 120MM Fans) Coolant for Cyberpower Xtreme Hydro Water Cooling Kits: Thermaltake C1000 Pure Clear Coolant Motherboard: GIGABYTE GA-X299 UD4 PRO ATX w/ RGB, Digital LED Support, USB 3.1, 5 PCIe x16, 8 SATA3, 2 M.2 SATA/PCIe [Intel Optane Ready] RAM / System Memory: 32GB (8GBx4) DDR4/3000MHz Quad Channel Memory (ADATA XPG Z1) Video Card: GeForce RTX™ 3090 24GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 1250 Watts - Enermax EDT1250EWT MaxTytan Series 80 PLUS Titanium certified Full Modular Active PFC Power Supply Primary Hard Drive: 512GB SAMSUNG 970 PRO PCIe NVMe M.2 SSD - Seq R/W: Up to 3500/2300 MB/s, Rnd R/W up to 370/500k (Single Drive) Secondary Hard Drive: 4TB (4TBx1) SATA-III 6.0Gb/s 64MB Cache 5400RPM HDD (Single Drive)"
         },
         {
-            "image": "PC5.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/PCO11XL/CS-193-107_400.png",
             "name": "Gamer Infinity XLC",
             "price": 2535.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i9-10900K 10/20 3.70GHz [Turbo 5.2GHz] 20MB Cache LGA1200 CPU / Processor Cooling Fan: CyberpowerPC MasterLiquid Lite 240mm ARGB CPU Liquid Cooler with Dual Chamber Pump & Copper Cold Plate (Intel) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB) Video Card: GeForce RTX™ 3080 10GB GDDR6X (Ampere) [VR Ready] (Single Card) Power Supply: 1,000 Watts - Standard 80 Plus Gold Power Supply Primary Hard Drive: 1TB WD Blue SN550 M.2 NVME SSD + 3TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC6.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/PCO11AIR/CS-193-103.png",
             "name": "Pro Designer 100",
             "price": 1859.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i7-10700 8/16 2.90GHz [Turbo 4.8GHz] 16MB Cache LGA1200 CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME Z490-P ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB) Video Card: GeForce® RTX 2070 SUPER™ 8GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 512GB ADATA XPG ASX6000LNP-512GT-C PCIe NVMe M.2 SSD - Seq R/W: Up to 1800/1200 MB/s, Rnd R/W up to 180/200k (Single Drive) Secondary Hard Drive: 2TB (2TBx1) SATA-III 6.0Gb/s 256MB Cache 7200RPM HDD (Single Drive)"
         },
         {
-            "image": "PC7.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/cube802/cs-192-401_400.png",
             "name": "Syber L Elite 300",
             "price": 1725.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i7-10700K 8/16 3.80GHz [Turbo 5.1GHz] 16MB Cache LGA1200 CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 16GB (8GBx2) DDR4/3200MHz Dual Channel Memory (Performance Memory by Major Brands) Video Card: GeForce® RTX 2070 SUPER™ 8GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 1TB WD Blue SN550 M.2 NVME SSD + 3TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC8.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/H510/CS-211-222_400.png",
             "name": "Gamer Master 8000",
             "price": 1525.00,
             "category": "Tech",
             "description": "CPU: AMD Ryzen 7 3800XT 3.9GHz [4.7GHz Turbo] 8 Cores/ 16 Threads 36MB Cache 105W Processor CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME B550-PLUS ATX w/ RGB, GbT LAN, 2 PCIe x16, 3 PCIe x1, 6 SATA3, 2 M.2 SATA/PCIe RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB) Video Card: GeForce® RTX 2060 SUPER™ 8GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 512GB ADATA XPG ASX6000LNP PCIe NVMe + Seagate 2TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC9.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/cube802/cs-192-401_400.png",
             "name": "Syber L pro 200",
             "price": 1335.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i7-10700 8/16 2.90GHz [Turbo 4.8GHz] 16MB Cache LGA1200 CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 16GB (8GBx2) DDR4/3200MHz Dual Channel Memory (Performance Memory by Major Brands) Video Card: AMD Radeon™ RX 5600 XT 6GB GDDR6 PCIe 4.0 [Navi] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 512GB ADATA XPG ASX6000LNP PCIe NVMe + Seagate 2TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC10.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/p418x/cs-450-140_400.png",
             "name": "AMD Ryzen 7X Configuration",
             "price": 1265.00,
             "category": "Tech",
             "description": "CPU: AMD Ryzen 7 3700X 3.6GHz [4.4GHz Turbo] 8 Cores/ 16 Threads 36MB Cache 65W Processor CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME B550-PLUS ATX w/ RGB, GbT LAN, 2 PCIe x16, 3 PCIe x1, 6 SATA3, 2 M.2 SATA/PCIe RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB Video Card: GeForce® GTX 1660 SUPER 6GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 240GB WD Green SSD + 1TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC11.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/p400a/CS-220-220_400.png",
             "name": "Gamer Xtreme 1000",
             "price": 1165.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i5-10400F 6/12 2.90GHz [Turbo 4.3GHz] 12MB Cache LGA1200 [w/o Integrated Graphic] (Comet Lake-S) CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB) Video Card: GeForce® GTX 1650 SUPER 4GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 512GB ADATA XPG ASX6000LNP PCIe NVMe + Seagate 2TB SATA III Hard Drive Combo (Combo Drive)"
         },
         {
-            "image": "PC12.png",
+            "image": "https://www.cyberpowerpc.com/images/cs/p418R/cs-450-159_400.png",
             "name": "Battlebox 2020 Essential Core",
             "price": 999.00,
             "category": "Tech",
             "description": "CPU: Intel® Core™ Processor i5-10400F 6/12 2.90GHz [Turbo 4.3GHz] 12MB Cache LGA1200 [w/o Integrated Graphic] (Comet Lake-S) CPU / Processor Cooling Fan: CyberPowerPC Asetek 550LC 120mm Liquid Cooling CPU Cooler (Single Standard 120MM Fan) Motherboard: ASUS PRIME Z490-V ATX, ARGB, 1GbE LAN, 2 PCIe x16, 4 PCIe x1, 4 SATA3, 2x M.2 SATA/PCIe + WiFi 6 Intel 201AX RAM / System Memory: 32GB (16GBx2) DDR4/3200MHz Dual Channel Memory (Team T-Force Delta RGB Video Card: GeForce® GTX 1660 SUPER 6GB GDDR6 (Turing) [VR Ready] (Single Card) Power Supply: 600 Watts - Standard 600Watts 80 Plus Gold high-efficient Power Supply Primary Hard Drive: 240GB WD Green Series M.2 SATA-III 6.0Gb/s SSD - Seq R/W: Up to 540/460 MB/s, Rnd R/W up to 37/68k (Single Drive) Secondary Hard Drive: 2TB (2TBx1) SATA-III 6.0Gb/s 256MB Cache 7200RPM HDD (Single Drive)"
         },
         {
-            "image": "AF1.png",
+            "image": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/dbx18w8zcnb6om4iehag/sf-air-force-1-premium-mens-shoe-Bv04G5.jpg",
             "name": "Nike SF Air Force 1 Premium",
             "price": 200.00,
             "category": "Shoes",
             "description": "A hoops icon toughens up with the Nike SF Air Force 1 Premium Men's Shoe. Crafted with a genuine leather and fabric upper, it features military-inspired details, a customizable ankle strap and a Nike Air unit for cushioned comfort."
         },
         {
-            "image": "BHeel.png",
+            "image": "https://www.balenciaga.com/66/11/11906913mg_12_a_f.jpg",
             "name": "Knife Knit 80mm",
             "price": 695.00,
             "category": "Shoes",
             "description": "This high heel is a clean black knit heel with a 80mm arch, and has a elongated pointed toe."
         },
         {
-            "image": "BLacedHeel.png",
+            "image": "https://www.balenciaga.com/66/11/11858237pv_12_a_f.jpg",
             "name": "Corset 80mm Bootie",
             "price": 1490.00,
             "category": "Shoes",
             "description": "This high heel is made with shiny sheep skin, with a 80mm arch, and has semi-shiny palladium hardwear, the corset effect is ade with lace and eyelets."
         },
         {
-            "image": "Bletteredsole.png",
+            "image": "https://www.balenciaga.com/66/11/11795161nt_12_a_f.jpg",
             "name": "Speed Sneaker Graffiti",
             "price": 825.00,
             "category": "Shoes",
             "description": "The sock-like design are very lightweight coming in at 240g making it feel like there is a could unter your feet, the sould has the logo on the side of it."
         },
         {
-            "image": "diorwhitegray.png",
+            "image": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_3/460x497/17f82f742ffe127f42dca9de82fb58b1/E/I/1592293528_3SH118YJP_H069_E03_GH.jpg?imwidth=430",
             "name": "B23 High-Top Sneaker",
             "price": 1100.00,
             "category": "Shoes",
             "description": "The B23 high-top sneaker is set apart by its white and black Dior Oblique motif and transparent paneling. Essential details, such as eyelets and a lace-up front, a white and beige rubber sole, a rounded and reinforced toe as well as a back tab recall the codes of the classic high-top style. The sneaker is further enhanced with contrasting details on the sides, including a 'DIOR' signature, and pairs easily with any casual outfit."
         },
         {
-            "image": "BPlatform.png",
+            "image": "https://www.balenciaga.com/66/11/11804965ii_12_a_f.jpg",
             "name": "Strike 20mm Lace-Up Boot",
             "price": 950.00,
             "category": "Shoes",
             "description": "This platform boot is mad efor smooth mat calfskin, with tone-on-tone lacing and stitching, and thick toothed rubber outsole."
         },
         {
-            "image": "jordan.png",
+            "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/97223f0a-dfde-4ca6-9ddd-c2436f154ff0/jordan-zoom-92-mens-shoe-HGMsj5.jpg",
             "name": "Jordan Zoom '92",
             "price": 150.00,
             "category": "Shoes",
             "description": "A nod to '90s basketball shoes, the Jordan Zoom '92 focuses on comfort while tapping into the irreverent spirit of that era's designs. A stretchy fit sleeve and underfoot cushioning offer a comfortable fit. '90s-inspired details give the shoe its retro flavor."
         },
         {
-            "image": "NMbluetongue.png",
+            "image": "https://images.neimanmarcus.com/ca/7/product_assets/N/5/B/M/K/NMN5BMK_mz.jpg",
             "name": "Giuseppe Zanotti Men's Velvet & Patent Leather Mid-Top Sneakers",
             "price": 710.00,
             "category": "Shoes",
             "description": "This mid-top sneaker is made out of velvet and patent metallic leather, with a round toe and duel zips on either side of the laces, and a rubber outsoul."
         },
         {
-            "image": "NMspike.png",
+            "image": "https://images.neimanmarcus.com/ca/5/product_assets/N/5/S/8/K/NMN5S8K_mz.jpg",
             "name": "Christian Louboutin Men's Spiked Sock 30 Neoprene Sneakers",
             "price": 1295.00,
             "category": "Shoes",
             "description": "This sock like sneaker has spiked embellishments, the front toe is rounded and reinforced to make the shoe more durable,and the pull-tab has the logo on it."
         },
         {
-            "image": "PrideCT.png",
+            "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwdb73de11/images/a_107/167758C_A_107X1.jpg?sw=964",
             "name": "Pride Chuck Taylor All Star",
             "price": 65.00,
             "category": "Shoes",
             "description": "A celebration of inclusivity and Pride, in all its forms and colors, inspired by the many flags raised by the LGBTQIA+ community. The “More Color, More Pride” flag expands to include brown and black stripes — representing the power of diversity and inclusion. With the Chuck Taylor All Star, a black-and-white classic is made over with brilliant, bright color."
         },
         {
-            "image": "Converse.png",
+            "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwb7894c1d/images/a_107/165092C_A_107X1.jpg?sw=964",
             "name": "Chuck Taylor All Star Space Racer High Top",
             "price": 60.00,
             "category": "Shoes",
             "description": "Switch up your go-to Chucks with this space-inspired remake. We've swapped out classic canvas for a polyester denim and topped it off with color-popped tape designs as a nod to outerspace repairs. It turns out duct tape really can fix anything."
         },
         {
-            "image": "BPink.png",
+            "image": "https://www.balenciaga.com/66/11/11929538wq_12_a_f.jpg",
             "name": "Knife Shark 110mm Over-The-Knee",
             "price": 2250.00,
             "category": "Shoes",
