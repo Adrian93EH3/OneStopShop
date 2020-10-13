@@ -74,7 +74,7 @@ class Backpack extends React.Component {
       console.log(data);
       const backpackData = data.data.filter((val) => {
         console.log(val.category);
-        return val.category === "Backpack";
+        return val.category === "Backpacks";
       });
       console.log(backpackData);
       this.setState({ backpackData: backpackData });

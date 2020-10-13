@@ -17,84 +17,84 @@ const productSeed = [
             "image": "https://img.ssensemedia.com/image/upload/b_white/c_scale,h_820/f_auto,dpr_1.0/202376M166012_1.jpg",
             "name": "Burberry Checkered Bag",
             "price": 990.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "This is a luxurious backpack made by none other than Burberry."
         },
         {
             "image": "https://img1.cohimg.net/is/image/Coach/89931_qbcah_a0?fmt=jpg&wid=680&hei=885&bgc=f0f0f0&fit=vfit&qlt=75",
             "name": "Coach Large Ranger Backpack",
             "price": 250.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Large leather bag with many storage options, including a inside laptop sleeve, multifunction pockets, and closes with drawstring and clips."
         },
         {
             "image": "https://img.ssensemedia.com/image/upload/b_white/c_scale,h_820/f_auto,dpr_1.0/202451M166261_1.jpg",
             "name": "Gucci Black Backpack",
             "price": 1980.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "The GG motif in a distinct black/grey combination is further enriched with Web straps and black leather trims. Made in soft GG Supreme, a softer version of GG Supreme canvas, crafted from a coated microfiber fabric with the GG motif."
         },
         {
             "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQHqjGklhIC-tmrCFe4Ij1lU47xXJIfzcp6zwB8SxFgYgx5EqDdDYQX-2xpj9CwptYejl0l7tZMhfzc3l_fv1ovkdbQjfqsy-ZuTFd8fwMBywciUCBwfb0g&usqp=CAY",
             "name": "Nike Wheat Backpack",
             "price": 75.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "The Nike Utility Speed Backpack keeps your gear close, secure and organized when commuting to and from training sessions. Cushioned straps give you comfort on the go, and the pack opens flat for easy access to must-have items."
         },
         {
             "image": "https://www.rei.com/media/c871bd1b-a4a7-4a27-b63e-e7d127368e12?size=784x588",
             "name": "Atmos AG 50",
             "price": 240.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "The Atmos™ AG 50 is the best-fitting, most ventilated and comfortable pack ever made for traditional backpacking trips lasting a weekend or more. The innovative AntiGravity suspension makes it feel like you're carrying less weight and seamlessly wraps around your body, which means you'll enjoy every mile more than ever. From easy to use stretch mesh side pockets, Stow-on-the-Go trekking pole attachment, and FlapJacket for lidless use, the Atmos™ AG 50 is still the top contender. Backed by our All Mighty Guarantee, forever."
         },
         {
             "image": "https://img.ssensemedia.com/image/upload/b_white/c_scale,h_820/f_auto,dpr_1.0/202418M166423_1.jpg",
             "name": "Saint Laurent Black Bag",
             "price": 860.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Backpack with leather trimmed Saint Laurent printed from pocket, Saint Laurent signature embossed exterior zip pocket and interior key clip, cell phone pocket, zip compartment and padded slot pocket."
         },
         {
             "image": "https://stockx.imgix.net/products/streetwear/Supreme-Backpack-SS20-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&trim=color&updated_at=1582320818&w=1000",
             "name": "Supreme SS20 Black",
             "price": 225.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Multi pocket bag with adjustable straps and two side pouches for water bottles the outer most pocket is a see throught mesh."
         },
         {
             "image": "https://stockx.imgix.net/products/streetwear/Supreme-Backpack-SS20-Red.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&trim=color&updated_at=1582233624&w=1000",
             "name": "Supreme SS20 Red",
             "price": 225.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Multi pocket bag with adjustable straps and two side pouches for water bottles the outer most pocket is a see throught mesh."
         },
         {
             "image": "https://cdn.shopify.com/s/files/1/2880/2774/products/TanHarperBackpack1_1800x1800.jpg?v=1591979771",
             "name": "Harper Leather Bag",
             "price": 269.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Harper's Crazy Horse Leather Backpack provides amazing durability along with giving off a stylish look. It has been carefully made with an embossing technique and from an excellent quality crazy horse leather. This bag acquires an antique, unique look with time since it is made of a natural material. Apart from being aesthetically pleasing, this backpack provides plenty of space in which you can easily store your essentials.This bag is also quite strong and sturdy and can withstand tough environments. The thoughtfully-designed shoulder straps distribute the weight evenly so that your shoulders feel relaxed and comfortable. You can also adjust the shoulder straps according to your liking. Harper's Crazy Horse Leather Backpack is a perfect choice for school, work, traveling, camping, or hiking etc. Its grab handle is lined with leather so you can easily and comfortably carry it around too."
         },
         {
             "image": "https://www.balenciaga.com/66/45/45474478cq_14_a_f.jpg",
             "name": "Wheel Small Backpack",
             "price": 950.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "This small nylon bag that was made in Italy by the ever famous Balenciaga brand comes with adjustable shoulder straps."
         },
         {
             "image": "https://img1.cohimg.net/is/image/Coach/89897_qbm2_a0?fmt=jpg&wid=680&hei=885&bgc=f0f0f0&fit=vfit&qlt=75",
             "name": "Hudson Backpack with Hore and Carriage Print",
             "price": 289.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Printed Coated canvas and natural pebble leather, the bag has multiple pouches for your phone or laptop."
         },
         {
             "image": "https://img1.cohimg.net/is/image/Coach/3001_qboh0_a0?fmt=jpg&wid=680&hei=885&bgc=f0f0f0&fit=vfit&qlt=75",
             "name": "West Backpack In Signature Canvas With Varsity Stripe",
             "price": 249.00,
-            "category": "Backpack",
+            "category": "Backpacks",
             "description": "Signature coated canvas and smooth calf leather, has two seperate compartments with zip closures, and adjustable shoulder straps."
         },
         {
