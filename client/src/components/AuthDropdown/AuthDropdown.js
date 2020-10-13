@@ -30,9 +30,10 @@ class AuthDropdown extends Component {
     return (
       <li className="nav-item dropdown">
         <button className="btn btn-link dropdown-toggle" onClick={this.toggleOpen} id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <Gravatar className="rounded-circle" email={user.email} size={30} /> {user.email}
+          <Gravatar className="rounded-circle" email={user.email} size={30} /> 
         </button>
         <div className={dropdownMenuClass} aria-labelledby="navbarDropdown">
+        {user.email}
           <div className="dropdown-item" onClick={this.handleLogout}>Logout</div>
         </div>
       </li>
