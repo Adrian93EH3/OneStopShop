@@ -86,24 +86,24 @@ class Home extends Component {
     return (
       <>
         <Col className="mx-auto" sm={4}>
-          <Carousel style={{ width: "23rem", height: "25rem" }} bg-light>
-            <Carousel.Item interval={1000}>
+          <Carousel>
+            <Carousel.Item interval={500}>
               <img
-                className="d-block w-100"
+                className="i-block "
                 src={"https://www.balenciaga.com/66/11/11929538wq_12_a_f.jpg"}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item interval={500}>
               <img
-                className="d-block w-100"
+                className="i-block "
                 src={"https://www.cyberpowerpc.com/images/cs/p418x/cs-450-140_400.png"}
                 alt="Second slide"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={500}>
               <img
-                className="d-block w-100"
+                className="i-block "
                 src={"https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vans-Barbed-Floral-White-Hoodie-_167121-front-CA.jpg"}
                 alt="Third slide"
               />
