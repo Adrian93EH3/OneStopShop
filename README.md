@@ -37,3 +37,27 @@ https://desolate-shore-74404.herokuapp.com/
 
 ## Landing Page
 <img src="client\public\Images\LandingPage.png">
+
+## Home Page
+<img src="client\public\Images\HomePage.png">
+
+## Backpacks Page
+<img src="client\public\Images\BackpacksPage.png">
+
+## Shoes Page
+<img src="client\public\Images\ShoesPage.png">
+
+## Tech Page
+<img src="client\public\Images\TechPage.png">
+
+## Clothes Page
+<img src="client\public\Images\ClothesPage.png">
+
+## Cart Page
+<img src="client\public\Images\CartPage.png">
+
+## Login Page
+<img src="client\public\Images\LoginPage.png">
+
+## Register Page
+<img src="client\public\Images\RegisterPage.png">
