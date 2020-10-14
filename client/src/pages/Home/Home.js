@@ -111,6 +111,10 @@ class Home extends Component {
           </Carousel>
         </Col>
 
+        <div>
+          <h1>Featured</h1>
+        </div>
+        
         <Row className="mx-auto">
           <Col sm={12}>
             <CardDeck>
