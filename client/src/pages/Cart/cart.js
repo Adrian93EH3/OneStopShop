@@ -41,7 +41,7 @@ const Shop = (props) => {
         <div>
         <Button className="mx-2 mb-2" type="submit" onClick={() => {props.cart.length=0; window.location.reload()}}>Empty Cart</Button>
         
-        <Button className="rickRoll mx-2 mb-2" type="submit" href="https://youtu.be/ub82Xb1C8os">Check Out</Button>
+        <Button className="rickRoll mx-2 mb-2" type="submit" target="_blank" href="https://youtu.be/ub82Xb1C8os">Check Out</Button>
         </div>
       </Card>
       <Row className="spacing3"></Row>

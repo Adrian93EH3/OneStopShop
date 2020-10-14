@@ -7,7 +7,7 @@ class Footer extends Component {
           <div className="col-sm-12 social">
             <ul className="footer-social">
               <li>
-                <a href="https://github.com/Adrian93EH3/Project-3">
+                <a target="_blank" href="https://github.com/Adrian93EH3/Project-3">
                   <i className="fa fa-github"></i>
                 </a>
               </li>

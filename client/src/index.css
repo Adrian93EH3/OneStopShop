@@ -225,6 +225,10 @@ footer .copyright span:last-child::after {
   margin: 320px;
 }
 
+.spacing4 {
+  margin: 284px;
+}
+
 /**
  * responsive:
  * footer

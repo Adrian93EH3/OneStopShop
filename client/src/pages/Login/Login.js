@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import API from '../../lib/API';
 import AuthContext from '../../contexts/AuthContext';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import { Row } from 'react-bootstrap';
 
 class Login extends Component {
   static contextType = AuthContext;
@@ -67,6 +68,7 @@ class Login extends Component {
             <div className='mt-3'>Don't have an account? <Link to='/register'>Click here to register.</Link></div>
           </div>
         </div>
+        <Row className="spacing4"></Row>
       </div>
     );
   }
