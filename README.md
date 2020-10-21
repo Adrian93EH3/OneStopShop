@@ -1,6 +1,7 @@
 # OneStopShop
 This is a full stack project built by Aaron, Adrian, Daniel and Steven, to finish the UNCC Coding Bootcamp provided by Trilogy Education.
 
+At the moment only Admins can successfully signup and login to add new items to the database under the chosen category.
 ## Getting Started
 
 1. Fork this repo on GitHub:
